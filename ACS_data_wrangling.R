@@ -1,18 +1,10 @@
-setwd("~/dspg2020Loudon")
+setwd("~/Project_Wythe_County")
 
 library(tidycensus)
 library(tidyverse)
 library (stringr)
 library(ggplot2)
 
-# Potential variable tables for predicting food insecurity (from FeedingAmerica):
-# B14006 (non- undergraduate student poverty rate), 
-# C17002 (ratio of income to poverty level), 
-# B19013 (median income), 
-# DP04 (homeownership rate), 
-# DP05 (percent African American and percent Hispanic)
-# S1810 (disability rate)
-# S2301 (Unemployment)
 
 #show available variables in a particular ACS survey
 acs5<-load_variables(2018, "acs5", cache=T)
@@ -25,10 +17,11 @@ acs5_profile<- load_variables(2018, "acs5/profile", cache=T)
 View(acs5_profile)
 
 
-#The "get_acs" function cannot return multiple variable tables at once.  To get around this, the following function
-#calls "get_acs" on a vector of table names. It returns a dataframe of all the tables bound 
-#together.  Note: the function requires a vector of table numbers, a census API key, and 
-#a geographical unit.  The user can add other parameters as well.
+#FUNCTIONS:
+
+# 1. "acs_tables" calls "get_acs" (from tidycensus) on a vector of table names. It returns a dataframe of 
+# all the tables bound together.  The function requires a vector of table names, 
+# a census API key, and a geographical unit.  The user can add other parameters as well.
 
 acs_tables<-function(tables,key,geography,...){
   acs_data<-NULL
@@ -45,10 +38,10 @@ acs_tables<-function(tables,key,geography,...){
   return(acs_data)
 }
 
-#This function cleans the data returned from a census API call.  Specifically, 
-#it separates the variable column into seperate variables, and it separates "NAME" into 
-#different columns with pre-defined column names (NAME_col_names). Note: the function also
-#drops the "margin of error" column.
+# 2. "acs_wide" cleans the data returned from a census API call.  More specifically, 
+# it separates the variable column into separate variables, and it separates "NAME" into 
+# different columns with pre-defined column names (NAME_col_names). The function also
+# drops the "margin of error" column.
 
 acs_wide<-function(data,NAME_col_names){
   data%>%
@@ -58,6 +51,48 @@ acs_wide<-function(data,NAME_col_names){
 }
 
 
+#3. acs_years retrieves individual variables (or a list of variables) across a series of years.
+acs_years<-function(years,key,geography,...){
+  acs_data<-NULL
+  for(i in 1:length(years)){
+    acs<-get_acs(geography = geography,
+                 #variables = vars,
+                 key = key,
+                 year=years[i],
+                 output = "wide",
+                 show_call = T,
+                 geometry = F,
+                 ...)
+    acs_data<-(rbind(acs_data,data.frame(acs)))
+  }
+  acs_data<-cbind(acs_data,year=rep((years),each=length(unique(acs_data$GEOID))))
+  return(acs_data)
+}
+
+
+#4. "acs_years_tables" uses two previously defined functions (acs_tables and acs_wide) to return multiple 
+# variable tables across multiple years in one single tibble.  A couple of notes: the way that 
+# get_acs handles variables before 2013 varies, so this function only works for 2013 and after.
+# For variable tables before 2013, use acs_tables to pull individual sets of tables.  Also, I have 
+# not included "geometry" in the function.  If the user includes geometry, he/she may need 
+# to modify the call to acs_wide.
+
+
+acs_years_tables<-function(tables,years,key,geography,NAME_col_names,...){
+  acs_data<-NULL
+  for (j in 1:length(years)){
+    acs<-acs_tables(tables=tables,year=years[j],key=key,geography = geography,...)
+    year<-rep(years[j],times=length(acs$GEOID))
+    acs_years2<-cbind(year,data.frame(acs))
+    acs_data<-(rbind(acs_data,acs_years2))
+  }
+  acs_data<-acs_wide(acs_data,NAME_col_names = NAME_col_names)
+  return(acs_data)
+}
+
+
+#DATA:
+
 #To request specific variables (rather than tables of variables), use the following code:
 
 #create a vector of variables to return
@@ -66,7 +101,7 @@ vars<-c(households_= "B19058_001",SNAP_="B19058_002")
 #"get_acs" creates a census api call using the vector of variables specified above
 acs<-get_acs(geography = "tract",
              state="VA",
-             county = "Loudoun county",
+             county = "Wythe county",
              variables = vars,
              survey = "acs5",
              key = .key,
@@ -82,16 +117,13 @@ acs<-separate(acs,NAME.y, into=colnames, sep = ", ")
 #To make a map:
 ggplot(acs, aes(fill = SNAP_E/households_E, color = SNAP_E/households_E)) +
   geom_sf() +
-  coord_sf(crs = 26914)+
-  labs(title="Loudoun County",subtitle="Households receiving SNAP")+
+  labs(title="Wythe County",subtitle="Proportion of households receiving SNAP")+
   theme(legend.title = element_blank())
-
-
-
 
 #To request a table or list of tables, use the following code, which returns variables for
 #all census tracts in VA:
-tables<-c("B14006","C17002","B19013","DP04","DP05","S1810","S2301")
+
+tables<-c("S2801","S2802") #These tables have to do with broadband
 acs_tract<-acs_tables(tables = tables,
                       key = .key,
                       #geographic entity is tract
@@ -112,12 +144,4 @@ acs_state<-acs_tables(tables = tables,
 colnames="State"
 acs_state_wide<-acs_wide(data=acs_state,NAME_col_names = colnames)
 
-#To save csv files, uncomment the relevant line:
-# write_csv(acs_state,"~/dspg2020Loudon/ACS_datasets/acs_state")
-# write_csv(acs_state_wide,"~/dspg2020Loudon/ACS_datasets/acs_state_wide")
-# write_csv(acs_tract,"~/dspg2020Loudon/ACS_datasets/acs_VA_tract")
-# write_csv(acs_tract_wide,"~/dspg2020Loudon/ACS_datasets/acs_VA_tract_wide")
-# write_csv(acs5,"~/dspg2020Loudon/ACS_datasets/acs5_variables")
-# write_csv(acs5,"~/dspg2020Loudon/ACS_datasets/acs5_subject_variables")
-# write_csv(acs5_subject,"~/dspg2020Loudon/ACS_datasets/acs5_subject_variables")
-# write_csv(acs5_profile,"~/dspg2020Loudon/ACS_datasets/acs5_profile_variables")
+
