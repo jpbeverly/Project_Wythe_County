@@ -91,7 +91,7 @@ acs_years_tables<-function(tables,years,key,geography,NAME_col_names,...){
 }
 
 
-#DATA:
+#PULLING VA DATA:
 
 #To request specific variables (rather than tables of variables), use the following code:
 
@@ -114,17 +114,15 @@ acs<-get_acs(geography = "tract",
 colnames=c("Census_tract","County","State")
 acs<-separate(acs,NAME.y, into=colnames, sep = ", ")
 
-#To make a map:
-ggplot(acs, aes(fill = SNAP_E/households_E, color = SNAP_E/households_E)) +
-  geom_sf() +
-  labs(title="Wythe County",subtitle="Proportion of households receiving SNAP")+
-  theme(legend.title = element_blank())
+
 
 #To request a table or list of tables, use the following code, which returns variables for
-#all census tracts in VA:
 
-tables<-c("S2801","S2802") #These tables have to do with broadband
-acs_tract<-acs_tables(tables = tables,
+#These tables have to do with broadband, healthcare, income, and education
+tables<-c("S2801","S2802","S2402","B19013","DP02") 
+
+#All census tracts in VA
+acs_VA_tract<-acs_tables(tables = tables,
                       key = .key,
                       #geographic entity is tract
                       geography = "tract",
@@ -132,16 +130,49 @@ acs_tract<-acs_tables(tables = tables,
                       state = "VA")
 
 
-#Changes the resulting data frame from long to wide format and drops MOE
+#Clean VA data and add relevant variables
 colnames=c("Census_tract","County","State")
-acs_tract_wide<-acs_wide(data=acs_tract,NAME_col_names = colnames)
+acs_VA_tract_wide<-acs_wide(data=acs_VA_tract,NAME_col_names = colnames)
+acs_VA_tract_wide<-acs_VA_tract_wide%>%
+  mutate(PerBroadband=S2801_C02_014)%>%
+  mutate(PerHealthcare=((S2402_C01_015)/S2402_C01_001)*100)%>%
+  mutate(MedianIncome=B19013_001)%>%
+  mutate(PropAssocPlus=((DP02_0063+DP02_0064+DP02_0065)/DP02_0058)*100)%>%
+  mutate(HousingPerIncome=)
 
-#This code returns a list of variables for all states in the US.
-acs_state<-acs_tables(tables = tables,
-                      key = .key,
-                      #geographic entity is "state."  Data includes all states.
-                      geography = "state")
-colnames="State"
-acs_state_wide<-acs_wide(data=acs_state,NAME_col_names = colnames)
+
+
+#MAPPING:
+
+#Get geometry data for Virginia
+VirginiaGeometry<-get_acs(geography = "tract",
+                         state="VA",
+                         variables = "B19058_002",
+                         survey = "acs5",
+                         key = .key,
+                         year=2018,
+                         output = "wide",
+                         show_call = T,
+                         geometry = T,
+                         keep_geo_vars = T)%>%
+  select(-c(11:12))
+
+acs_VA_geom<-inner_join(acs_VA_tract_wide,VirginiaGeometry,by="GEOID")
+
+#Get geometry for Whythe County
+va_sf<-tigris::county_subdivisions(state = "51", cb = T, class = "sf")%>%
+  group_by(COUNTYFP)%>%
+  filter(COUNTYFP==197)%>%
+  summarize()
+
+#Plot
+p<-ggplot(acs_VA_geom, aes(fill = PropAssocPlus, color = PropAssocPlus)) +
+  geom_sf(aes(geometry=geometry)) +
+  geom_sf(data=va_sf,fill="transparent",color="black",size=0.5)+
+  labs(title="Virginia",subtitle="Proportion (age>25) with associate's or higher")+
+  theme(legend.title = element_blank())+
+  scale_fill_viridis_c()+
+  scale_color_viridis_c()
+p
 
 
