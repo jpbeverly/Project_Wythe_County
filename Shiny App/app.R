@@ -41,7 +41,7 @@ selectInput("selected", "Select industry:",
 choices =choice,
 selected = "Iowa",
 selectize=TRUE),
-sidebarMenu(id="menua
+sidebarMenu(id="menu",
 menuItem("industry", tabName = "map", icon = icon("draw-polygon")),
 menuItem("Histogram", tabName = "histogram", icon = icon("bar-chart"))
 )
