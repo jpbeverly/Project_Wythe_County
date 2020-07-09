@@ -4,7 +4,8 @@ library(tidycensus)
 library(tidyverse)
 library (stringr)
 library(ggplot2)
-
+library(viridis)
+library(ggthemes)
 
 #show available variables in a particular ACS survey
 acs5<-load_variables(2018, "acs5", cache=T)
@@ -129,18 +130,38 @@ acs_VA_tract<-acs_tables(tables = tables,
                       #data restricted to the state of VA
                       state = "VA")
 
+acs_VA_county<-acs_tables(tables = tables,
+                         key = .key,
+                         #geographic entity is tract
+                         geography = "county",
+                         #data restricted to the state of VA
+                         state = "VA")
 
 #Clean VA data and add relevant variables
 colnames=c("Census_tract","County","State")
 acs_VA_tract_wide<-acs_wide(data=acs_VA_tract,NAME_col_names = colnames)
 acs_VA_tract_wide<-acs_VA_tract_wide%>%
   mutate(PerBroadband=S2801_C02_014)%>%
-  mutate(PerHealthcare=((S2402_C01_015)/S2402_C01_001)*100)%>%
+  mutate(PerHealthcare=round((((S2402_C01_015)/S2402_C01_001)*100),3))%>%
   mutate(MedianIncome=B19013_001)%>%
-  mutate(PropAssocPlus=((DP02_0063+DP02_0064+DP02_0065)/DP02_0058)*100)%>%
-  mutate(HousingPerIncome=)
+  mutate(PropAssocPlus=round((((DP02_0063+DP02_0064+DP02_0065)/DP02_0058)*100),3))
 
-
+#Clean VA county ata and add relevant variables
+colnames=c("County","State")
+acs_VA_county_wide<-acs_wide(data=acs_VA_county,NAME_col_names = colnames)
+acs_VA_county_wide<-acs_VA_county_wide%>%
+  mutate(PerBroadband=S2801_C02_014)%>%
+  mutate(PerHealthcare=round((((S2402_C01_015)/S2402_C01_001)*100),3))%>%
+  mutate(MedianIncome=B19013_001)%>%
+  mutate(PropAssocPlus=round((((DP02_0063+DP02_0064+DP02_0065)/DP02_0058)*100),3))%>%
+  rename("Code"="GEOID")
+acs_VA_county_wide$Code<-str_remove(acs_VA_county_wide$Code,"51")
+acs_VA_county_wide<-inner_join(acs_VA_county_wide,FIPS,by="Code")%>%
+  select(-c(County.x,State.x))%>%
+  rename(County=County.y,
+         State=State.y)%>%
+  select(Code, County, State,PerBroadband,PerHealthcare,MedianIncome,PropAssocPlus)
+ 
 
 #MAPPING:
 
@@ -157,7 +178,20 @@ VirginiaGeometry<-get_acs(geography = "tract",
                          keep_geo_vars = T)%>%
   select(-c(11:12))
 
-acs_VA_geom<-inner_join(acs_VA_tract_wide,VirginiaGeometry,by="GEOID")
+acs_VA_geom<-inner_join(acs_VA_tract_wide,VirginiaGeometry,by="GEOID")%>%
+  select(GEOID,Census_tract,County, COUNTYFP, State, STATEFP,PerBroadband,PerHealthcare,MedianIncome,PropAssocPlus,geometry)
+
+VirginiaCountyGeometry<-get_acs(geography = "county",
+                          state="VA",
+                          variables = "B19058_002",
+                          survey = "acs5",
+                          key = .key,
+                          year=2018,
+                          output = "wide",
+                          show_call = T,
+                          geometry = T,
+                          keep_geo_vars = T)%>%
+  select(COUNTYFP,geometry)
 
 #Get geometry for Whythe County
 va_sf<-tigris::county_subdivisions(state = "51", cb = T, class = "sf")%>%
@@ -165,14 +199,28 @@ va_sf<-tigris::county_subdivisions(state = "51", cb = T, class = "sf")%>%
   filter(COUNTYFP==197)%>%
   summarize()
 
-#Plot
-p<-ggplot(acs_VA_geom, aes(fill = PropAssocPlus, color = PropAssocPlus)) +
-  geom_sf(aes(geometry=geometry)) +
-  geom_sf(data=va_sf,fill="transparent",color="black",size=0.5)+
-  labs(title="Virginia",subtitle="Proportion (age>25) with associate's or higher")+
-  theme(legend.title = element_blank())+
-  scale_fill_viridis_c()+
-  scale_color_viridis_c()
-p
+#PLOTTING
 
+#divide relevant variable into quantiles
+quantile.interval = quantile(acs_VA_geom$PerHealthcare, probs=seq(0, 1, by = .2),na.rm = T)
+acs_VA_geom$PerHealthcareQuan = cut(acs_VA_geom$PerHealthcare, breaks=quantile.interval, include.lowest = TRUE)
+acs_VA_geom$PerHealthcareQuan[is.na(acs_VA_geom$PerHealthcareQuan)]<-"[0,2.72]"
+
+#plot at the state level
+ggplot() +
+  geom_sf(data=acs_VA_geom,aes(geometry=geometry,fill = PerHealthcareQuan, color = PerHealthcareQuan),show.legend = "fill") +
+  geom_sf(data=VirginiaCountyGeometry,fill="transparent",color="black",size=0.5,show.legend = F)+
+  geom_sf(data=VirginiaCountyGeometry%>%filter(COUNTYFP==197),fill="transparent",color="white",size=0.5,show.legend = F)+
+  labs(title="Virginia",subtitle="Percent of population working in healthcare")+
+  scale_fill_viridis(discrete=T,name = "Quantiles", labels = c("1","2","3","4","5"),guide = guide_legend(reverse=TRUE))+
+  scale_color_viridis(discrete=T,name = "Quantiles", labels = c("1","2","3","4","5"),guide = guide_legend(reverse=TRUE))
+
+#Plot at the county level.  I manually set the beginning and end of the viridis scale to resemble the scale at the state level for Wythe.
+#The scale goes from 0 to 1, and I aused the quantiles as a rough guide.
+ggplot() +
+  geom_sf(data=acs_VA_geom%>%filter(COUNTYFP==197),aes(geometry=geometry,fill = PerHealthcareQuan, color = PerHealthcareQuan),show.legend = "fill") +
+  geom_sf(data=VirginiaCountyGeometry%>%filter(COUNTYFP==197),fill="transparent",color="black",size=0.5,show.legend = F)+
+  labs(title="Wythe County",subtitle="Percent of population working in healthcare")+
+  scale_fill_viridis(discrete=T,begin=0,end=1,name = "Quantiles", labels = c("1","3","4","5"),guide = guide_legend(reverse=TRUE))+
+  scale_color_viridis(discrete=T,begin=0,end=1,name = "Quantiles", labels = c("1","3","4","5"),guide = guide_legend(reverse=TRUE))
 
