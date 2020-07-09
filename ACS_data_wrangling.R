@@ -165,7 +165,7 @@ acs_VA_county_wide<-inner_join(acs_VA_county_wide,FIPS,by="Code")%>%
 
 #MAPPING:
 
-#Get geometry data for Virginia
+#Get census-level geometry data for Virginia 
 VirginiaGeometry<-get_acs(geography = "tract",
                          state="VA",
                          variables = "B19058_002",
@@ -181,6 +181,7 @@ VirginiaGeometry<-get_acs(geography = "tract",
 acs_VA_geom<-inner_join(acs_VA_tract_wide,VirginiaGeometry,by="GEOID")%>%
   select(GEOID,Census_tract,County, COUNTYFP, State, STATEFP,PerBroadband,PerHealthcare,MedianIncome,PropAssocPlus,geometry)
 
+#Get county level geometry for VA.
 VirginiaCountyGeometry<-get_acs(geography = "county",
                           state="VA",
                           variables = "B19058_002",
@@ -192,12 +193,6 @@ VirginiaCountyGeometry<-get_acs(geography = "county",
                           geometry = T,
                           keep_geo_vars = T)%>%
   select(COUNTYFP,geometry)
-
-#Get geometry for Whythe County
-va_sf<-tigris::county_subdivisions(state = "51", cb = T, class = "sf")%>%
-  group_by(COUNTYFP)%>%
-  filter(COUNTYFP==197)%>%
-  summarize()
 
 #PLOTTING
 
@@ -216,7 +211,7 @@ ggplot() +
   scale_color_viridis(discrete=T,name = "Quantiles", labels = c("1","2","3","4","5"),guide = guide_legend(reverse=TRUE))
 
 #Plot at the county level.  I manually set the beginning and end of the viridis scale to resemble the scale at the state level for Wythe.
-#The scale goes from 0 to 1, and I aused the quantiles as a rough guide.
+#The scale goes from 0 to 1, and I used the quantiles as a rough guide.
 ggplot() +
   geom_sf(data=acs_VA_geom%>%filter(COUNTYFP==197),aes(geometry=geometry,fill = PerHealthcareQuan, color = PerHealthcareQuan),show.legend = "fill") +
   geom_sf(data=VirginiaCountyGeometry%>%filter(COUNTYFP==197),fill="transparent",color="black",size=0.5,show.legend = F)+
