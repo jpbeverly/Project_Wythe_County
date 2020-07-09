@@ -1,0 +1,13 @@
+name: VA_demographics
+title: VA_demographics
+username:
+account: wellay01
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2549147
+bundleId: 3368166
+url: https://wellay01.shinyapps.io/VA_demographics/
+when: 1594228149.61439
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Wythe2.RData|data/.DS_Store

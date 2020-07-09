@@ -1,0 +1,134 @@
+Code,County,State,PerBroadband,PerHealthcare,MedianIncome,PropAssocPlus
+001,Accomack,Virginia,63.8,5.474,43210,25.866
+003,Albemarle,Virginia,84.6,10.338,75394,59.114
+005,Alleghany,Virginia,67.2,4.575,47794,25.302
+007,Amelia,Virginia,75.1,3.757,58526,23.721
+009,Amherst,Virginia,65.1,5.535,49170,29.021
+011,Appomattox,Virginia,65.5,7.307,56176,28.812
+013,Arlington,Virginia,90.3,3.671,117374,77.941
+015,Augusta,Virginia,72.4,5.822,61305,30.954
+017,Bath,Virginia,62.9,4.188,46137,19.911
+019,Bedford,Virginia,74.6,5.839,61541,37.65
+021,Bland,Virginia,71.9,7.253,50511,28.019
+023,Botetourt,Virginia,76.1,6.229,68410,39.96
+025,Brunswick,Virginia,62.5,5.598,41927,20.042
+027,Buchanan,Virginia,59.7,6.632,30806,16.725
+029,Buckingham,Virginia,59.9,7.615,46261,17.308
+031,Campbell,Virginia,71.8,5.865,50258,30.507
+033,Caroline,Virginia,69.2,3.463,64715,27.225
+035,Carroll,Virginia,65.2,8.558,43532,23.851
+036,Charles (City),Virginia,59.8,2.522,59192,19.605
+037,Charlotte,Virginia,54,6.088,39212,20.657
+041,Chesterfield,Virginia,89.1,6.731,80214,48.015
+043,Clarke,Virginia,74.5,5.378,77936,40.753
+045,Craig,Virginia,67.7,7.334,55484,29.78
+047,Culpeper,Virginia,79.1,5.543,73116,32.64
+049,Cumberland,Virginia,58.5,4.6,46221,24.874
+051,Dickenson,Virginia,60,5.149,29226,18.844
+053,Dinwiddie,Virginia,70.3,5.627,55880,26.224
+057,Essex,Virginia,57.4,4.722,52681,21.536
+059,Fairfax,Virginia,93,4.434,121133,66.529
+061,Fauquier,Virginia,86.9,5.097,97469,44.342
+063,Floyd,Virginia,70.7,9.267,49729,31.937
+065,Fluvanna,Virginia,85.6,10.806,74931,42.663
+067,Franklin,Virginia,69.2,6.068,52639,30.252
+069,Frederick,Virginia,79.1,6.556,73250,36.752
+071,Giles,Virginia,73.4,6.894,52478,26.271
+073,Gloucester,Virginia,80.5,4.838,66701,32.186
+075,Goochland,Virginia,80.9,5.325,89741,47.176
+077,Grayson,Virginia,64.4,9.675,33969,22.527
+079,Greene,Virginia,81.4,3.905,64979,34.398
+081,Greensville,Virginia,61.9,6.151,44534,14.692
+083,Halifax,Virginia,55.2,8.171,42289,24.615
+085,Hanover,Virginia,85.5,5.683,88652,47.166
+087,Henrico,Virginia,85.4,6.753,68572,49.912
+089,Henry,Virginia,67.2,6.025,36683,24.023
+091,Highland,Virginia,73.6,5.373,46147,27.769
+093,Isle of Wight,Virginia,75.1,7.733,71376,38.212
+095,James City,Virginia,85.9,8.013,83048,57.774
+097,King and Queen,Virginia,57,1.731,54516,27.325
+099,King George,Virginia,86,2.912,87321,43.21
+101,King William,Virginia,70.2,3.376,68720,30.655
+103,Lancaster,Virginia,72,9.063,50739,37.14
+105,Lee,Virginia,48.2,11.547,32718,18.482
+107,Loudoun,Virginia,93.7,3.302,136268,66.876
+109,Louisa,Virginia,74.5,6.238,59343,30.856
+111,Lunenburg,Virginia,56.4,4.144,41868,17.087
+113,Madison,Virginia,68.9,6.076,54197,30.525
+115,Mathews,Virginia,70.5,8.834,67009,34.356
+117,Mecklenburg,Virginia,56.2,6.696,42025,26.469
+119,Middlesex,Virginia,64.7,4.45,51917,30.125
+121,Montgomery,Virginia,85.8,6.539,54641,52.702
+125,Nelson,Virginia,64.8,4.737,62446,37.87
+127,New Kent,Virginia,79.5,6.467,79698,35.855
+131,Northampton,Virginia,66.5,7.887,43553,28.103
+133,Northumberland,Virginia,73.1,5.963,58677,36.576
+135,Nottoway,Virginia,64.3,4.747,42869,19.18
+137,Orange,Virginia,75.6,4.44,68481,31.237
+139,Page,Virginia,63.2,5.802,47951,18.779
+141,Patrick,Virginia,63.7,4.117,40486,23.73
+143,Pittsylvania,Virginia,66.2,5.406,45382,23.046
+145,Powhatan,Virginia,87.1,5.479,83914,36.858
+147,Prince Edward,Virginia,66,6.527,46189,33.499
+149,Prince George,Virginia,79.4,6.12,67001,33.379
+153,Prince William,Virginia,93.1,4.134,103445,48.01
+155,Pulaski,Virginia,66.7,7.079,52638,31.919
+157,Rappahannock,Virginia,73.7,4.161,68438,39.731
+159,Richmond,Virginia,68.6,6.292,49831,23.294
+161,Roanoke,Virginia,81.7,8.356,65467,46.259
+163,Rockbridge,Virginia,69.5,4.361,54805,33.786
+165,Rockingham,Virginia,73.6,5.705,59817,32.587
+167,Russell,Virginia,57.8,8.048,39482,23.422
+169,Scott,Virginia,62.4,7.607,39144,22.31
+171,Shenandoah,Virginia,71.8,4.893,54921,27.684
+173,Smyth,Virginia,68.2,8.548,40425,23.733
+175,Southampton,Virginia,71.1,6.41,54611,26.777
+177,Spotsylvania,Virginia,88.1,4.694,85330,38.851
+179,Stafford,Virginia,92.9,4.386,106773,48.337
+181,Surry,Virginia,64.7,5.4,54844,25.717
+183,Sussex,Virginia,63.6,7.293,45801,17.975
+185,Tazewell,Virginia,70.2,9.811,40978,25.567
+187,Warren,Virginia,80.6,4.944,68189,28.611
+191,Washington,Virginia,74.1,8.956,46262,32.3
+193,Westmoreland,Virginia,74.4,2.497,54268,28.823
+195,Wise,Virginia,66,6.873,38345,22.926
+197,Wythe,Virginia,67.9,7.571,48043,28.58
+199,York,Virginia,89.8,5.909,90367,56.032
+510,Alexandria (City),Virginia,89.7,3.523,96733,66.958
+520,Bristol (City),Virginia,75.5,5.487,37904,31.39
+530,Buena Vista (City),Virginia,63.7,4.141,34273,21.663
+540,Charlottesville (City),Virginia,81.1,9.699,58933,56.953
+550,Chesapeake (City),Virginia,88.5,6.065,75790,41.841
+570,Colonial Heights (City),Virginia,76.9,4.629,53716,32.755
+580,Covington (City),Virginia,69,10.695,39432,23.117
+590,Danville (City),Virginia,68,8.66,36301,27.345
+595,Emporia (City),Virginia,62.9,8.133,30857,21.592
+600,Fairfax (City),Virginia,94,4.158,111574,65.262
+610,Falls Church (City),Virginia,93.7,3.269,124796,82.351
+620,Franklin (City),Virginia,67.2,3.021,40375,31.169
+630,Fredericksburg (City),Virginia,83.5,3.787,63274,47.358
+640,Galax (City),Virginia,66.8,8.484,31938,18.742
+650,Hampton (City),Virginia,80.3,4.731,54550,36.753
+660,Harrisonburg (City),Virginia,74.4,4.015,43893,42.417
+670,Hopewell (City),Virginia,69.8,4.045,40497,21.134
+678,Lexington (City),Virginia,70,12.099,36466,44.151
+680,Lynchburg (City),Virginia,74.6,7.453,43374,43.252
+683,Manassas (City),Virginia,87.5,3.255,78462,37.814
+685,Manassas Park (City),Virginia,89,4.169,80667,38.637
+690,Martinsville (City),Virginia,72.1,3.244,33224,30.822
+700,Newport News (City),Virginia,74.9,5.147,51884,35.455
+710,Norfolk (City),Virginia,81.4,5.485,49146,36.314
+720,Norton (City),Virginia,65.2,9.686,28071,26.327
+730,Petersburg (City),Virginia,65,5.927,36135,23.369
+735,Poquoson (City),Virginia,86.5,6.663,96831,52.001
+740,Portsmouth (City),Virginia,76,5.215,50224,29.758
+750,Radford (City),Virginia,78,5.087,36743,48.083
+760,Richmond (City),Virginia,73,6.428,45117,44.192
+770,Roanoke (City),Virginia,71.9,7.103,43028,32.635
+775,Salem (City),Virginia,77.5,7.375,57185,40.393
+790,Staunton (City),Virginia,74.1,6.452,48049,40.931
+800,Suffolk (City),Virginia,78.3,6.859,70664,36.818
+810,Virginia Beach (City),Virginia,87.8,6.548,74186,45.664
+820,Waynesboro (City),Virginia,71.9,5.355,45738,31.588
+830,Williamsburg (City),Virginia,85.2,4.99,56163,61.678
+840,Winchester (City),Virginia,73.1,8.219,53797,40.968
