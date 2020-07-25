@@ -1,0 +1,12 @@
+name: ShinyFinalPresentation
+title: ShinyFinalPresentation
+username:
+account: wellay01
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2609694
+bundleId: 3433631
+url: https://wellay01.shinyapps.io/ShinyFinalPresentation/
+when: 1595648658.56845
+asMultiple: FALSE
+asStatic: FALSE

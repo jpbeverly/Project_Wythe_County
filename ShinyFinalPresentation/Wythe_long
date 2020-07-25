@@ -1,0 +1,41 @@
+name,value,Variable
+1,3473,Household Size
+2,4442,Household Size
+3,1993,Household Size
+4+,2047,Household Size
+Less than HS,2954,Level of Education
+HS Diploma,8113,Level of Education
+Some College (No Degree),4032,Level of Education
+Associate's Degree,2124,Level of Education
+BA/BS or Higher,3918,Level of Education
+"<$5,000",364,Household Income
+"$5,000-$9,999",473,Household Income
+"$10,000-$14,999",865,Household Income
+"$15,000-$19,999",829,Household Income
+"$20,000-$24,999",755,Household Income
+"$25,000-$34,999",1232,Household Income
+"$35,000-$49,999",1804,Household Income
+"$50,000-$74,999",2287,Household Income
+"$75,000-$99,999",1606,Household Income
+"$100,000-$149,999",1949,Household Income
+">$150,000",547,Household Income
+"<$50,000",1212,Home Values
+"$50,000-$99,999",2111,Home Values
+"$150,000-$199,999",1579,Home Values
+"$200,000-$299,999",1267,Home Values
+"$300,000-$499,999",793,Home Values
+"$500,000-$999,999",175,Home Values
+">$1,000,000",26,Home Values
+"Ag, forestry, mining",461,Industry
+Construction,753,Industry
+Manufacturing,2348,Industry
+Wholesale Trade,245,Industry
+Retail Trade,1882,Industry
+"Transportation, utilities",444,Industry
+Information,63,Industry
+"Finance, insurance",297,Industry
+"Professional, scientific, management",1013,Industry
+"Education, healthcare",3240,Industry
+"Arts, recreation",980,Industry
+Other,520,Industry
+Public Admin,824,Industry
