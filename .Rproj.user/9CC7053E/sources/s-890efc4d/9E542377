@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1596130389151.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3640956318",
+    "id" : "9E542377",
+    "lastKnownWriteTime" : 1595952860,
+    "last_content_update" : 1595952860,
+    "path" : "~/git/Project_Wythe_County/ACS_internet_education.R",
+    "project_path" : "ACS_internet_education.R",
+    "properties" : {
+        "cursorPosition" : "17,18",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
