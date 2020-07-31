@@ -1,40 +1,4 @@
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git pull
-remote: Enumerating objects: 4, done.[K
-remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
-remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0[K
-Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
-From github.com:jpbeverly/Project_Wythe_County
-   764172e..918f8e6  master     -> origin/master
-Updating 764172e..918f8e6
-Fast-forward
- ACS_data_wrangling.R | 123 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- 1 file changed, 123 insertions(+)
- create mode 100644 ACS_data_wrangling.R
-git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git [Kpul[K[K[K pull
-Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$02_geospatial pull
-bash: 02_geospatial: command not found
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git u[Kpull
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git stasj[Kh
-No local changes to save
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$ git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git staj[Ksh
-No local changes to save
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git pull
-Already up to date.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git stash apple[Ky
-No stash entries found.
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git stash list
-]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git stat[Ksh show
-No stash entries found.
+
 ]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git pull origin TRain[K[K[K[Kraingin[K[K[King
 fatal: Couldn't find remote ref Training
 ]0;/sfs/qumulo/qhome/jpb8a/git/Project_Wythe_Countybash-4.4$git pull e[Kreset
@@ -830,3 +794,255 @@ error: The following untracked working tree files would be overwritten by checko
 Please move or remove them before you switch branches.
 Aborting
 ]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git add .
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$gitg[K[Kt gc[K[K[Kc[K commit -m "Jb Edits"
+[master 4a0e448] Jb Edits
+ 58 files changed, 135451 insertions(+), 358 deletions(-)
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/9CC7053E/console06/F753BE7C
+ create mode 100644 .Rproj.user/9CC7053E/console06/F753BE7C.env
+ create mode 100644 .Rproj.user/9CC7053E/console06/INDEX001
+ create mode 100644 .Rproj.user/9CC7053E/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/9CC7053E/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/9CC7053E/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/9CC7053E/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/9CC7053E/persistent-state
+ create mode 100644 .Rproj.user/9CC7053E/saved_source_markers
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/2886A942
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/2CDD7D54
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/6022D330
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/67E9E793
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/9FD3CB71
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/DF834C07
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/DF83D94F
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/E562A325
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/E6E0316C
+ create mode 100644 .Rproj.user/9CC7053E/sources/prop/INDEX
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/29D1C259-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/789E0A2C-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/C282972D-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA-contents
+ create mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ rewrite ShinyFinalPresentation/DSPGWytheCounty.R (68%)
+ create mode 100644 ShinyFinalPresentation/Tree_Ed
+ create mode 100644 ShinyFinalPresentation/Tree_Ex
+ create mode 100644 ShinyFinalPresentation/Tree_Job
+ create mode 100644 ShinyFinalPresentation/Tree_Site
+ create mode 100644 ShinyFinalPresentation/Wythe_ONET_Trees.R
+ create mode 100644 ShinyFinalPresentation/data/All_Career_Clusters.csv
+ create mode 100644 ShinyFinalPresentation/data/All_Industries.csv
+ create mode 100644 ShinyFinalPresentation/data/Education, Training, and Experience Categories.xlsx
+ create mode 100644 ShinyFinalPresentation/data/Education, Training, and Experience.xlsx
+ create mode 100644 ShinyFinalPresentation/data/Knowledge.xlsx
+ create mode 100644 ShinyFinalPresentation/www/Adam.Wells.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Afrina.Tabassum.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Approach.png
+ create mode 100644 ShinyFinalPresentation/www/Conaway.Haskins.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Dylan.Glover.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Ford.Ramsey.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Josh.Beverly.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Matt.Holt.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Susan.Chen.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/Talib.Grant.VT.jpg
+ create mode 100644 ShinyFinalPresentation/www/VCE.Logo.png
+ create mode 100644 ShinyFinalPresentation/www/Wythe.png
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git push origin jbBranch3
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'jbBranch3' on GitHub by visiting:[K
+remote:      https://github.com/jpbeverly/Project_Wythe_County/pull/new/jbBranch3[K
+remote: 
+To github.com:jpbeverly/Project_Wythe_County.git
+ * [new branch]      jbBranch3 -> jbBranch3
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C.env[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/INDEX001[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git push
+Counting objects: 66, done.
+Delta compression using up to 40 threads.
+Compressing objects:   1% (1/60)   Compressing objects:   3% (2/60)   Compressing objects:   5% (3/60)   Compressing objects:   6% (4/60)   Compressing objects:   8% (5/60)   Compressing objects:  10% (6/60)   Compressing objects:  11% (7/60)   Compressing objects:  13% (8/60)   Compressing objects:  15% (9/60)   Compressing objects:  16% (10/60)   Compressing objects:  18% (11/60)   Compressing objects:  20% (12/60)   Compressing objects:  21% (13/60)   Compressing objects:  23% (14/60)   Compressing objects:  25% (15/60)   Compressing objects:  26% (16/60)   Compressing objects:  28% (17/60)   Compressing objects:  30% (18/60)   Compressing objects:  31% (19/60)   Compressing objects:  33% (20/60)   Compressing objects:  35% (21/60)   Compressing objects:  36% (22/60)   Compressing objects:  38% (23/60)   Compressing objects:  40% (24/60)   Compressing objects:  41% (25/60)   Compressing objects:  43% (26/60)   Compressing objects:  45% (27/60)   Compressing objects:  46% (28/60)   Compressing objects:  48% (29/60)   Compressing objects:  50% (30/60)   Compressing objects:  51% (31/60)   Compressing objects:  53% (32/60)   Compressing objects:  55% (33/60)   Compressing objects:  56% (34/60)   Compressing objects:  58% (35/60)   Compressing objects:  60% (36/60)   Compressing objects:  61% (37/60)   Compressing objects:  63% (38/60)   Compressing objects:  65% (39/60)   Compressing objects:  66% (40/60)   Compressing objects:  68% (41/60)   Compressing objects:  70% (42/60)   Compressing objects:  71% (43/60)   Compressing objects:  73% (44/60)   Compressing objects:  75% (45/60)   Compressing objects:  76% (46/60)   Compressing objects:  78% (47/60)   Compressing objects:  80% (48/60)   Compressing objects:  81% (49/60)   Compressing objects:  83% (50/60)   Compressing objects:  85% (51/60)   Compressing objects:  86% (52/60)   Compressing objects:  88% (53/60)   Compressing objects:  90% (54/60)   Compressing objects:  91% (55/60)   Compressing objects:  93% (56/60)   Compressing objects:  95% (57/60)   Compressing objects:  96% (58/60)   Compressing objects:  98% (59/60)   Compressing objects: 100% (60/60)   Compressing objects: 100% (60/60), done.
+Writing objects:   1% (1/66)   Writing objects:   3% (2/66)   Writing objects:   4% (3/66)   Writing objects:   6% (4/66)   Writing objects:   7% (5/66)   Writing objects:   9% (6/66)   Writing objects:  10% (7/66)   Writing objects:  12% (8/66)   Writing objects:  13% (9/66)   Writing objects:  15% (10/66)   Writing objects:  16% (11/66)   Writing objects:  18% (12/66)   Writing objects:  19% (13/66)   Writing objects:  21% (14/66)   Writing objects:  22% (15/66)   Writing objects:  24% (16/66)   Writing objects:  25% (17/66)   Writing objects:  27% (18/66)   Writing objects:  28% (19/66)   Writing objects:  30% (20/66)   Writing objects:  31% (21/66)   Writing objects:  33% (22/66)   Writing objects:  34% (23/66)   Writing objects:  36% (24/66)   Writing objects:  37% (25/66)   Writing objects:  39% (26/66)   Writing objects:  40% (27/66)   Writing objects:  42% (28/66)   Writing objects:  43% (29/66)   Writing objects:  45% (30/66)   Writing objects:  46% (31/66)   Writing objects:  50% (33/66)   Writing objects:  51% (34/66)   Writing objects:  53% (35/66)   Writing objects:  54% (36/66)   Writing objects:  56% (37/66)   Writing objects:  57% (38/66)   Writing objects:  59% (39/66)   Writing objects:  60% (40/66)   Writing objects:  62% (41/66)   Writing objects:  63% (42/66)   Writing objects:  65% (43/66)   Writing objects:  66% (44/66)   Writing objects:  68% (45/66)   Writing objects:  69% (46/66)   Writing objects:  71% (47/66)   Writing objects:  72% (48/66)   Writing objects:  74% (49/66)   Writing objects:  75% (50/66)   Writing objects:  77% (51/66)   Writing objects:  78% (52/66)   Writing objects:  80% (53/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  81% (54/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  83% (55/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  84% (56/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  86% (57/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  87% (58/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  89% (59/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  90% (60/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  92% (61/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  93% (62/66), 2.94 MiB | 4.60 MiB/s   Writing objects:  93% (62/66), 12.21 MiB | 10.55 MiB/s   Writing objects:  95% (63/66), 12.21 MiB | 10.55 MiB/s   Writing objects:  96% (64/66), 12.21 MiB | 10.55 MiB/s   Writing objects:  98% (65/66), 12.21 MiB | 10.55 MiB/s   Writing objects: 100% (66/66), 12.21 MiB | 10.55 MiB/s   Writing objects: 100% (66/66), 18.74 MiB | 14.42 MiB/s, done.
+Total 66 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 2 local objects.[K
+To github.com:jpbeverly/Project_Wythe_County.git
+   fc1a146..4a0e448  master -> master
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git pull[K[K[K[Kcheckout master
+M	.Rproj.user/9CC7053E/console06/F753BE7C
+M	.Rproj.user/9CC7053E/console06/F753BE7C.env
+M	.Rproj.user/9CC7053E/console06/INDEX001
+M	.Rproj.user/9CC7053E/sources/prop/2886A942
+M	.Rproj.user/9CC7053E/sources/prop/2CDD7D54
+M	.Rproj.user/9CC7053E/sources/prop/67E9E793
+M	.Rproj.user/9CC7053E/sources/prop/DF834C07
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+M	.Rproj.user/shared/notebooks/paths
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/2886A942[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/2CDD7D54[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/67E9E793[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/DF834C07[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mACS_internet_education.R[m
+	[31mWythe_ONET_2Trees.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$[Kbash-4.4$git chekout[K[K[K[Kckout master
+M	.Rproj.user/9CC7053E/console06/F753BE7C
+M	.Rproj.user/9CC7053E/console06/INDEX001
+M	.Rproj.user/9CC7053E/sources/prop/2886A942
+M	.Rproj.user/9CC7053E/sources/prop/2CDD7D54
+M	.Rproj.user/9CC7053E/sources/prop/67E9E793
+M	.Rproj.user/9CC7053E/sources/prop/DF834C07
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+M	.Rproj.user/shared/notebooks/paths
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git pull origin master
+From github.com:jpbeverly/Project_Wythe_County
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+f[Kgit checkout master
+M	.Rhistory
+M	.Rproj.user/9CC7053E/console06/F753BE7C
+M	.Rproj.user/9CC7053E/console06/INDEX001
+M	.Rproj.user/9CC7053E/pcs/files-pane.pper
+M	.Rproj.user/9CC7053E/pcs/windowlayoutstate.pper
+M	.Rproj.user/9CC7053E/sources/prop/2886A942
+M	.Rproj.user/9CC7053E/sources/prop/2CDD7D54
+M	.Rproj.user/9CC7053E/sources/prop/67E9E793
+M	.Rproj.user/9CC7053E/sources/prop/DF834C07
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/29D1C259-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/6D608174
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/6D608174-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/789E0A2C-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/C282972D-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA-contents
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/lock_file
+M	.Rproj.user/shared/notebooks/paths
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git pull origin master
+From github.com:jpbeverly/Project_Wythe_County
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git checkout ib [K[K[K-b bev1
+M	.Rhistory
+M	.Rproj.user/9CC7053E/console06/F753BE7C
+M	.Rproj.user/9CC7053E/console06/F753BE7C.env
+M	.Rproj.user/9CC7053E/console06/INDEX001
+M	.Rproj.user/9CC7053E/pcs/files-pane.pper
+M	.Rproj.user/9CC7053E/pcs/windowlayoutstate.pper
+M	.Rproj.user/9CC7053E/sources/prop/2886A942
+M	.Rproj.user/9CC7053E/sources/prop/2CDD7D54
+M	.Rproj.user/9CC7053E/sources/prop/67E9E793
+M	.Rproj.user/9CC7053E/sources/prop/DF834C07
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/29D1C259-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/6D608174
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/6D608174-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/789E0A2C-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/9E542377-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/C282972D-contents
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+D	.Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA-contents
+M	.Rproj.user/9CC7053E/sources/s-890efc4d/lock_file
+M	.Rproj.user/shared/notebooks/paths
+Switched to a new branch 'bev1'
+[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$git status
+On branch bev1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C.env[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/9CC7053E/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/9CC7053E/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/2886A942[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/2CDD7D54[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/67E9E793[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/DF834C07[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/29D1C259-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/789E0A2C-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/C282972D-contents[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA[m
+	[31mdeleted:    .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA-contents[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/s-890efc4d/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   ShinyFinalPresentation/Tree_Ed[m
+	[31mmodified:   ShinyFinalPresentation/Tree_Ex[m
+	[31mmodified:   ShinyFinalPresentation/Tree_Job[m
+	[31mmodified:   ShinyFinalPresentation/Tree_Site[m
+	[31mmodified:   ShinyFinalPresentation/Wythe_ONET_Trees.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31mACS_internet_education.R[m
+	[31mProject_Wythe_County.Rproj[m
+	[31mShinyFinalPresentation/data/Education, Training, and Experience Categories short.xlsx[m
+	[31mShinyFinalPresentation/data/Education, Training, and Experience short.xlsx[m
+	[31mWythe_ONET_2Trees.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git add .
