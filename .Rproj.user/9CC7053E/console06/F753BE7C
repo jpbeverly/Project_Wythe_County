@@ -1249,3 +1249,61 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$f[Kgit add .
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git ci[Kommit -m "Afrina and Josh Shiny Edits"
+[bev2 9eb2e33] Afrina and Josh Shiny Edits
+ 23 files changed, 485 insertions(+), 38 deletions(-)
+ rewrite .Rproj.user/9CC7053E/console06/INDEX001 (64%)
+ rename ShinyFinalPresentation/{ => data}/High schools.xlsx (100%)
+ rename ShinyFinalPresentation/{ => data}/Internet_Education.csv (100%)
+ rename ShinyFinalPresentation/{ => data}/Wythe_area_outline.rds (100%)
+ rename ShinyFinalPresentation/{ => data}/Wythe_outline.rds (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.cpg (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.dbf (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.prj (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.shp (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.shp.ea.iso.xml (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.shp.iso.xml (100%)
+ rename ShinyFinalPresentation/{ => data}/cb_2018_us_county_5m.shx (100%)
+ rename ShinyFinalPresentation/{ => data}/clg_uni_virginia_distance_from_county_centroid.csv (100%)
+ rename ShinyFinalPresentation/{ => data}/college_uni_distance_from_county_centroid.csv (100%)
+ rename ShinyFinalPresentation/{ => data}/community_college_distance_from_county_centroid.csv (100%)
+ rename ShinyFinalPresentation/{ => data}/small_business_distance_from_county_centroid.csv (100%)
+ rename ShinyFinalPresentation/{ => data}/va_sf.rds (100%)
+ rename ShinyFinalPresentation/{ => data}/workforce_distance_from_county_centroid.csv (100%)
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git push origin [K[Kgit [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit stats[Kus
+On branch bev2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git push origin bev2
+Counting objects: 16, done.
+Delta compression using up to 40 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  62% (10/16)   Writing objects:  68% (11/16)   Writing objects:  75% (12/16)   Writing objects:  81% (13/16)   Writing objects:  87% (14/16)   Writing objects:  93% (15/16)   Writing objects: 100% (16/16)   Writing objects: 100% (16/16), 7.58 KiB | 1.26 MiB/s, done.
+Total 16 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/11)[Kremote: Resolving deltas:   9% (1/11)[Kremote: Resolving deltas:  18% (2/11)[Kremote: Resolving deltas:  27% (3/11)[Kremote: Resolving deltas:  36% (4/11)[Kremote: Resolving deltas:  45% (5/11)[Kremote: Resolving deltas:  54% (6/11)[Kremote: Resolving deltas:  63% (7/11)[Kremote: Resolving deltas:  72% (8/11)[Kremote: Resolving deltas:  90% (10/11)[Kremote: Resolving deltas: 100% (11/11)[Kremote: Resolving deltas: 100% (11/11), completed with 10 local objects.[K
+remote: 
+remote: Create a pull request for 'bev2' on GitHub by visiting:[K
+remote:      https://github.com/jpbeverly/Project_Wythe_County/pull/new/bev2[K
+remote: 
+To github.com:jpbeverly/Project_Wythe_County.git
+ * [new branch]      bev2 -> bev2
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git status
+On branch bev2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git checkout s[Kmaster
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/9CC7053E/console06/F753BE7C
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$git d[Kadd .
