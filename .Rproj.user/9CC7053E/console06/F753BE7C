@@ -1046,3 +1046,206 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git add .
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git commit 0[K-m "Jso[K[Kosh Edits"
+[bev1 8191e37] Josh Edits
+ 32 files changed, 43941 insertions(+), 44218 deletions(-)
+ rewrite .Rproj.user/9CC7053E/console06/INDEX001 (75%)
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/29D1C259-contents
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/6D608174-contents
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/789E0A2C-contents
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/C282972D-contents
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA
+ delete mode 100644 .Rproj.user/9CC7053E/sources/s-890efc4d/D0B450AA-contents
+ create mode 100644 .gitignore
+ rename .Rproj.user/9CC7053E/sources/s-890efc4d/9E542377-contents => ACS_internet_education.R (100%)
+ create mode 100644 Project_Wythe_County.Rproj
+ create mode 100644 ShinyFinalPresentation/data/Education, Training, and Experience Categories short.xlsx
+ create mode 100644 ShinyFinalPresentation/data/Education, Training, and Experience short.xlsx
+ rename .Rproj.user/9CC7053E/sources/s-890efc4d/BBDA931D-contents => Wythe_ONET_2Trees.R (85%)
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git push origin bevl[K1
+Counting objects: 101, done.
+Delta compression using up to 40 threads.
+Compressing objects:   1% (1/90)   Compressing objects:   2% (2/90)   Compressing objects:   3% (3/90)   Compressing objects:   4% (4/90)   Compressing objects:   5% (5/90)   Compressing objects:   6% (6/90)   Compressing objects:   7% (7/90)   Compressing objects:   8% (8/90)   Compressing objects:  10% (9/90)   Compressing objects:  11% (10/90)   Compressing objects:  12% (11/90)   Compressing objects:  13% (12/90)   Compressing objects:  14% (13/90)   Compressing objects:  15% (14/90)   Compressing objects:  16% (15/90)   Compressing objects:  17% (16/90)   Compressing objects:  18% (17/90)   Compressing objects:  20% (18/90)   Compressing objects:  21% (19/90)   Compressing objects:  22% (20/90)   Compressing objects:  23% (21/90)   Compressing objects:  24% (22/90)   Compressing objects:  25% (23/90)   Compressing objects:  26% (24/90)   Compressing objects:  27% (25/90)   Compressing objects:  28% (26/90)   Compressing objects:  30% (27/90)   Compressing objects:  31% (28/90)   Compressing objects:  32% (29/90)   Compressing objects:  33% (30/90)   Compressing objects:  34% (31/90)   Compressing objects:  35% (32/90)   Compressing objects:  36% (33/90)   Compressing objects:  37% (34/90)   Compressing objects:  38% (35/90)   Compressing objects:  40% (36/90)   Compressing objects:  41% (37/90)   Compressing objects:  42% (38/90)   Compressing objects:  43% (39/90)   Compressing objects:  44% (40/90)   Compressing objects:  45% (41/90)   Compressing objects:  46% (42/90)   Compressing objects:  47% (43/90)   Compressing objects:  48% (44/90)   Compressing objects:  50% (45/90)   Compressing objects:  51% (46/90)   Compressing objects:  52% (47/90)   Compressing objects:  53% (48/90)   Compressing objects:  54% (49/90)   Compressing objects:  55% (50/90)   Compressing objects:  56% (51/90)   Compressing objects:  57% (52/90)   Compressing objects:  58% (53/90)   Compressing objects:  60% (54/90)   Compressing objects:  61% (55/90)   Compressing objects:  62% (56/90)   Compressing objects:  63% (57/90)   Compressing objects:  64% (58/90)   Compressing objects:  65% (59/90)   Compressing objects:  66% (60/90)   Compressing objects:  67% (61/90)   Compressing objects:  68% (62/90)   Compressing objects:  70% (63/90)   Compressing objects:  71% (64/90)   Compressing objects:  72% (65/90)   Compressing objects:  73% (66/90)   Compressing objects:  74% (67/90)   Compressing objects:  75% (68/90)   Compressing objects:  76% (69/90)   Compressing objects:  77% (70/90)   Compressing objects:  78% (71/90)   Compressing objects:  80% (72/90)   Compressing objects:  81% (73/90)   Compressing objects:  82% (74/90)   Compressing objects:  83% (75/90)   Compressing objects:  84% (76/90)   Compressing objects:  85% (77/90)   Compressing objects:  86% (78/90)   Compressing objects:  87% (79/90)   Compressing objects:  88% (80/90)   Compressing objects:  90% (81/90)   Compressing objects:  91% (82/90)   Compressing objects:  92% (83/90)   Compressing objects:  93% (84/90)   Compressing objects:  94% (85/90)   Compressing objects:  95% (86/90)   Compressing objects:  96% (87/90)   Compressing objects:  97% (88/90)   Compressing objects:  98% (89/90)   Compressing objects: 100% (90/90)   Compressing objects: 100% (90/90), done.
+Writing objects:   0% (1/101)   Writing objects:   1% (2/101)   Writing objects:   2% (3/101)   Writing objects:   3% (4/101)   Writing objects:   4% (5/101)   Writing objects:   5% (6/101)   Writing objects:   6% (7/101)   Writing objects:   7% (8/101)   Writing objects:   8% (9/101)   Writing objects:   9% (10/101)   Writing objects:  10% (11/101)   Writing objects:  11% (12/101)   Writing objects:  12% (13/101)   Writing objects:  13% (14/101)   Writing objects:  14% (15/101)   Writing objects:  15% (16/101)   Writing objects:  16% (17/101)   Writing objects:  17% (18/101)   Writing objects:  18% (19/101)   Writing objects:  19% (20/101)   Writing objects:  20% (21/101)   Writing objects:  21% (22/101)   Writing objects:  22% (23/101)   Writing objects:  23% (24/101)   Writing objects:  24% (25/101)   Writing objects:  25% (26/101)   Writing objects:  26% (27/101)   Writing objects:  27% (28/101)   Writing objects:  28% (29/101)   Writing objects:  29% (30/101)   Writing objects:  30% (31/101)   Writing objects:  31% (32/101)   Writing objects:  32% (33/101)   Writing objects:  33% (34/101)   Writing objects:  34% (35/101)   Writing objects:  35% (36/101)   Writing objects:  36% (37/101)   Writing objects:  37% (38/101)   Writing objects:  38% (39/101)   Writing objects:  39% (40/101)   Writing objects:  40% (41/101)   Writing objects:  41% (42/101)   Writing objects:  43% (44/101)   Writing objects:  46% (47/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  47% (48/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  48% (49/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  49% (50/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  50% (51/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  51% (52/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  52% (53/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  53% (54/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  54% (55/101), 1.05 MiB | 1.91 MiB/s   Writing objects:  54% (55/101), 5.06 MiB | 4.77 MiB/s   Writing objects:  55% (56/101), 5.06 MiB | 4.77 MiB/s   Writing objects:  56% (57/101), 5.06 MiB | 4.77 MiB/s   Writing objects:  57% (58/101), 5.06 MiB | 4.77 MiB/s   Writing objects:  58% (59/101), 8.19 MiB | 5.13 MiB/s   Writing objects:  59% (60/101), 8.19 MiB | 5.13 MiB/s   Writing objects:  60% (61/101), 8.19 MiB | 5.13 MiB/s   Writing objects:  61% (62/101), 8.19 MiB | 5.13 MiB/s   Writing objects:  62% (63/101), 8.19 MiB | 5.13 MiB/s   Writing objects:  62% (63/101), 12.61 MiB | 5.99 MiB/s   Writing objects:  63% (64/101), 12.61 MiB | 5.99 MiB/s   Writing objects:  64% (65/101), 12.61 MiB | 5.99 MiB/s   Writing objects:  65% (66/101), 12.61 MiB | 5.99 MiB/s   Writing objects:  66% (67/101), 12.61 MiB | 5.99 MiB/s   Writing objects:  67% (68/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  68% (69/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  69% (70/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  70% (71/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  71% (72/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  72% (73/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  73% (74/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  74% (75/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  75% (76/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  76% (77/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  77% (78/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  78% (79/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  79% (80/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  80% (81/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  81% (82/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  82% (83/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  83% (84/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  84% (85/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  85% (86/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  86% (87/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  87% (88/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  88% (89/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  89% (90/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  91% (92/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  92% (93/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  93% (94/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  94% (95/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  95% (96/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  96% (97/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  97% (98/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  98% (99/101), 20.81 MiB | 7.98 MiB/s   Writing objects:  99% (100/101), 20.81 MiB | 7.98 MiB/s   Writing objects: 100% (101/101), 20.81 MiB | 7.98 MiB/s   Writing objects: 100% (101/101), 21.33 MiB | 7.61 MiB/s, done.
+Total 101 (delta 20), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/20)[Kremote: Resolving deltas:  10% (2/20)[Kremote: Resolving deltas:  15% (3/20)[Kremote: Resolving deltas:  20% (4/20)[Kremote: Resolving deltas:  25% (5/20)[Kremote: Resolving deltas:  30% (6/20)[Kremote: Resolving deltas:  35% (7/20)[Kremote: Resolving deltas:  40% (8/20)[Kremote: Resolving deltas:  45% (9/20)[Kremote: Resolving deltas:  50% (10/20)[Kremote: Resolving deltas:  65% (13/20)[Kremote: Resolving deltas:  70% (14/20)[Kremote: Resolving deltas:  80% (16/20)[Kremote: Resolving deltas:  90% (18/20)[Kremote: Resolving deltas:  95% (19/20)[Kremote: Resolving deltas: 100% (20/20)[Kremote: Resolving deltas: 100% (20/20), completed with 3 local objects.[K
+remote: 
+remote: Create a pull request for 'bev1' on GitHub by visiting:[K
+remote:      https://github.com/jpbeverly/Project_Wythe_County/pull/new/bev1[K
+remote: 
+To github.com:jpbeverly/Project_Wythe_County.git
+ * [new branch]      bev1 -> bev1
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git checkoit[K[Kut master
+error: Your local changes to the following files would be overwritten by checkout:
+	.Rproj.user/9CC7053E/console06/F753BE7C
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git pull origin master
+remote: Enumerating objects: 26, done.[K
+remote: Counting objects:   3% (1/26)[Kremote: Counting objects:   7% (2/26)[Kremote: Counting objects:  11% (3/26)[Kremote: Counting objects:  15% (4/26)[Kremote: Counting objects:  19% (5/26)[Kremote: Counting objects:  23% (6/26)[Kremote: Counting objects:  26% (7/26)[Kremote: Counting objects:  30% (8/26)[Kremote: Counting objects:  34% (9/26)[Kremote: Counting objects:  38% (10/26)[Kremote: Counting objects:  42% (11/26)[Kremote: Counting objects:  46% (12/26)[Kremote: Counting objects:  50% (13/26)[Kremote: Counting objects:  53% (14/26)[Kremote: Counting objects:  57% (15/26)[Kremote: Counting objects:  61% (16/26)[Kremote: Counting objects:  65% (17/26)[Kremote: Counting objects:  69% (18/26)[Kremote: Counting objects:  73% (19/26)[Kremote: Counting objects:  76% (20/26)[Kremote: Counting objects:  80% (21/26)[Kremote: Counting objects:  84% (22/26)[Kremote: Counting objects:  88% (23/26)[Kremote: Counting objects:  92% (24/26)[Kremote: Counting objects:  96% (25/26)[Kremote: Counting objects: 100% (26/26)[Kremote: Counting objects: 100% (26/26), done.[K
+remote: Compressing objects:   4% (1/23)[Kremote: Compressing objects:   8% (2/23)[Kremote: Compressing objects:  13% (3/23)[Kremote: Compressing objects:  17% (4/23)[Kremote: Compressing objects:  21% (5/23)[Kremote: Compressing objects:  26% (6/23)[Kremote: Compressing objects:  30% (7/23)[Kremote: Compressing objects:  34% (8/23)[Kremote: Compressing objects:  39% (9/23)[Kremote: Compressing objects:  43% (10/23)[Kremote: Compressing objects:  47% (11/23)[Kremote: Compressing objects:  52% (12/23)[Kremote: Compressing objects:  56% (13/23)[Kremote: Compressing objects:  60% (14/23)[Kremote: Compressing objects:  65% (15/23)[Kremote: Compressing objects:  69% (16/23)[Kremote: Compressing objects:  73% (17/23)[Kremote: Compressing objects:  78% (18/23)[Kremote: Compressing objects:  82% (19/23)[Kremote: Compressing objects:  86% (20/23)[Kremote: Compressing objects:  91% (21/23)[Kremote: Compressing objects:  95% (22/23)[Kremote: Compressing objects: 100% (23/23)[Kremote: Compressing objects: 100% (23/23), done.[K
+Unpacking objects:   3% (1/26)   Unpacking objects:   7% (2/26)   Unpacking objects:  11% (3/26)   Unpacking objects:  15% (4/26)   Unpacking objects:  19% (5/26)   Unpacking objects:  23% (6/26)   Unpacking objects:  26% (7/26)   Unpacking objects:  30% (8/26)   Unpacking objects:  34% (9/26)   Unpacking objects:  38% (10/26)   Unpacking objects:  42% (11/26)   Unpacking objects:  46% (12/26)   Unpacking objects:  50% (13/26)   Unpacking objects:  53% (14/26)   Unpacking objects:  57% (15/26)   remote: Total 26 (delta 2), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  61% (16/26)   Unpacking objects:  65% (17/26)   Unpacking objects:  69% (18/26)   Unpacking objects:  73% (19/26)   Unpacking objects:  76% (20/26)   Unpacking objects:  80% (21/26)   Unpacking objects:  84% (22/26)   Unpacking objects:  88% (23/26)   Unpacking objects:  92% (24/26)   Unpacking objects:  96% (25/26)   Unpacking objects: 100% (26/26)   Unpacking objects: 100% (26/26), done.
+From github.com:jpbeverly/Project_Wythe_County
+ * branch            master     -> FETCH_HEAD
+   4a0e448..ed784bb  master     -> origin/master
+Updating 8191e37..ed784bb
+Fast-forward
+ All Variables/High schools.xlsx                        | Bin [31m0[m -> [32m8841[m bytes
+ All Variables/Internet_Education.csv                   |  18 [32m+[m
+ All Variables/Wythe_area_outline.rds                   | Bin [31m0[m -> [32m50581[m bytes
+ All Variables/Wythe_outline.rds                        | Bin [31m0[m -> [32m3015[m bytes
+ All Variables/app.R                                    | 318 [32m+++++++++++++[m
+ All Variables/cb_2018_us_county_5m.cpg                 |   1 [32m+[m
+ All Variables/cb_2018_us_county_5m.dbf                 | Bin [31m0[m -> [32m527301[m bytes
+ All Variables/cb_2018_us_county_5m.prj                 |   1 [32m+[m
+ All Variables/cb_2018_us_county_5m.shp                 | Bin [31m0[m -> [32m3674580[m bytes
+ All Variables/cb_2018_us_county_5m.shp.ea.iso.xml      | 379 [32m+++++++++++++++[m
+ All Variables/cb_2018_us_county_5m.shp.iso.xml         | 569 [32m+++++++++++++++++++++++[m
+ All Variables/cb_2018_us_county_5m.shx                 | Bin [31m0[m -> [32m25964[m bytes
+ .../clg_uni_virginia_distance_from_county_centroid.csv |  18 [32m+[m
+ .../college_uni_distance_from_county_centroid.csv      |  18 [32m+[m
+ ...community_college_distance_from_county_centroid.csv |  18 [32m+[m
+ All Variables/read.md                                  |   1 [32m+[m
+ .../small_business_distance_from_county_centroid.csv   |  18 [32m+[m
+ All Variables/va_sf.rds                                | Bin [31m0[m -> [32m50581[m bytes
+ .../workforce_distance_from_county_centroid.csv        |  18 [32m+[m
+ 19 files changed, 1377 insertions(+)
+ create mode 100644 All Variables/High schools.xlsx
+ create mode 100644 All Variables/Internet_Education.csv
+ create mode 100644 All Variables/Wythe_area_outline.rds
+ create mode 100644 All Variables/Wythe_outline.rds
+ create mode 100644 All Variables/app.R
+ create mode 100644 All Variables/cb_2018_us_county_5m.cpg
+ create mode 100644 All Variables/cb_2018_us_county_5m.dbf
+ create mode 100644 All Variables/cb_2018_us_county_5m.prj
+ create mode 100644 All Variables/cb_2018_us_county_5m.shp
+ create mode 100644 All Variables/cb_2018_us_county_5m.shp.ea.iso.xml
+ create mode 100644 All Variables/cb_2018_us_county_5m.shp.iso.xml
+ create mode 100644 All Variables/cb_2018_us_county_5m.shx
+ create mode 100644 All Variables/clg_uni_virginia_distance_from_county_centroid.csv
+ create mode 100644 All Variables/college_uni_distance_from_county_centroid.csv
+ create mode 100644 All Variables/community_college_distance_from_county_centroid.csv
+ create mode 100644 All Variables/read.md
+ create mode 100644 All Variables/small_business_distance_from_county_centroid.csv
+ create mode 100644 All Variables/va_sf.rds
+ create mode 100644 All Variables/workforce_distance_from_county_centroid.csv
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git checkout -b be[Kv[Kev2
+M	.Rproj.user/9CC7053E/console06/F753BE7C
+Switched to a new branch 'bev2'
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$git [K[K[K[K[Kbash-4.4$[Kbash-4.4$[Kbash-4.4$git statis[K[Kus
+On branch bev2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/67E9E793[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/INDEX[m
+	[31mmodified:   All Variables/app.R[m
+	[31mmodified:   ShinyFinalPresentation/DSPGWytheCounty.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$git pull origin master
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:jpbeverly/Project_Wythe_County
+ * branch            master     -> FETCH_HEAD
+   ed784bb..d057528  master     -> origin/master
+Updating ed784bb..d057528
+Fast-forward
+ ShinyFinalPresentation/High schools.xlsx               | Bin [31m0[m -> [32m8841[m bytes
+ ShinyFinalPresentation/Internet_Education.csv          |  18 [32m+[m
+ ShinyFinalPresentation/Wythe_area_outline.rds          | Bin [31m0[m -> [32m50581[m bytes
+ ShinyFinalPresentation/Wythe_outline.rds               | Bin [31m0[m -> [32m3015[m bytes
+ ShinyFinalPresentation/cb_2018_us_county_5m.cpg        |   1 [32m+[m
+ ShinyFinalPresentation/cb_2018_us_county_5m.dbf        | Bin [31m0[m -> [32m527301[m bytes
+ ShinyFinalPresentation/cb_2018_us_county_5m.prj        |   1 [32m+[m
+ ShinyFinalPresentation/cb_2018_us_county_5m.shp        | Bin [31m0[m -> [32m3674580[m bytes
+ .../cb_2018_us_county_5m.shp.ea.iso.xml                | 379 [32m+++++++++++++++[m
+ .../cb_2018_us_county_5m.shp.iso.xml                   | 569 [32m+++++++++++++++++++++++[m
+ ShinyFinalPresentation/cb_2018_us_county_5m.shx        | Bin [31m0[m -> [32m25964[m bytes
+ .../clg_uni_virginia_distance_from_county_centroid.csv |  18 [32m+[m
+ .../college_uni_distance_from_county_centroid.csv      |  18 [32m+[m
+ ...community_college_distance_from_county_centroid.csv |  18 [32m+[m
+ .../small_business_distance_from_county_centroid.csv   |  18 [32m+[m
+ ShinyFinalPresentation/va_sf.rds                       | Bin [31m0[m -> [32m50581[m bytes
+ .../workforce_distance_from_county_centroid.csv        |  18 [32m+[m
+ 17 files changed, 1058 insertions(+)
+ create mode 100644 ShinyFinalPresentation/High schools.xlsx
+ create mode 100644 ShinyFinalPresentation/Internet_Education.csv
+ create mode 100644 ShinyFinalPresentation/Wythe_area_outline.rds
+ create mode 100644 ShinyFinalPresentation/Wythe_outline.rds
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.cpg
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.dbf
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.prj
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.shp
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.shp.ea.iso.xml
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.shp.iso.xml
+ create mode 100644 ShinyFinalPresentation/cb_2018_us_county_5m.shx
+ create mode 100644 ShinyFinalPresentation/clg_uni_virginia_distance_from_county_centroid.csv
+ create mode 100644 ShinyFinalPresentation/college_uni_distance_from_county_centroid.csv
+ create mode 100644 ShinyFinalPresentation/community_college_distance_from_county_centroid.csv
+ create mode 100644 ShinyFinalPresentation/small_business_distance_from_county_centroid.csv
+ create mode 100644 ShinyFinalPresentation/va_sf.rds
+ create mode 100644 ShinyFinalPresentation/workforce_distance_from_county_centroid.csv
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$[Kbash-4.4$[Kbash-4.4$git status
+On branch bev2
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/9CC7053E/console06/F753BE7C[m
+	[31mmodified:   .Rproj.user/9CC7053E/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/67E9E793[m
+	[31mmodified:   .Rproj.user/9CC7053E/sources/prop/INDEX[m
+	[31mmodified:   All Variables/app.R[m
+	[31mmodified:   ShinyFinalPresentation/DSPGWytheCounty.R[m
+	[31mdeleted:    ShinyFinalPresentation/High schools.xlsx[m
+	[31mdeleted:    ShinyFinalPresentation/Internet_Education.csv[m
+	[31mdeleted:    ShinyFinalPresentation/Wythe_area_outline.rds[m
+	[31mdeleted:    ShinyFinalPresentation/Wythe_outline.rds[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.cpg[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.dbf[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.prj[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.shp[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.shp.ea.iso.xml[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.shp.iso.xml[m
+	[31mdeleted:    ShinyFinalPresentation/cb_2018_us_county_5m.shx[m
+	[31mdeleted:    ShinyFinalPresentation/clg_uni_virginia_distance_from_county_centroid.csv[m
+	[31mdeleted:    ShinyFinalPresentation/college_uni_distance_from_county_centroid.csv[m
+	[31mdeleted:    ShinyFinalPresentation/community_college_distance_from_county_centroid.csv[m
+	[31mdeleted:    ShinyFinalPresentation/small_business_distance_from_county_centroid.csv[m
+	[31mdeleted:    ShinyFinalPresentation/va_sf.rds[m
+	[31mdeleted:    ShinyFinalPresentation/workforce_distance_from_county_centroid.csv[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mShinyFinalPresentation/data/High schools.xlsx[m
+	[31mShinyFinalPresentation/data/Internet_Education.csv[m
+	[31mShinyFinalPresentation/data/Wythe_area_outline.rds[m
+	[31mShinyFinalPresentation/data/Wythe_outline.rds[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.cpg[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.dbf[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.prj[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.shp[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.shp.ea.iso.xml[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.shp.iso.xml[m
+	[31mShinyFinalPresentation/data/cb_2018_us_county_5m.shx[m
+	[31mShinyFinalPresentation/data/clg_uni_virginia_distance_from_county_centroid.csv[m
+	[31mShinyFinalPresentation/data/college_uni_distance_from_county_centroid.csv[m
+	[31mShinyFinalPresentation/data/community_college_distance_from_county_centroid.csv[m
+	[31mShinyFinalPresentation/data/small_business_distance_from_county_centroid.csv[m
+	[31mShinyFinalPresentation/data/va_sf.rds[m
+	[31mShinyFinalPresentation/data/workforce_distance_from_county_centroid.csv[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;/home/jpb8a/git/Project_Wythe_Countybash-4.4$f[Kgit add .
