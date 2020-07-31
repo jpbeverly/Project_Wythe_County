@@ -13,8 +13,8 @@ library(collapsibleTree)
 #Import and clean data from ONET
 All_Career_Clusters<- read_csv("data/All_Career_Clusters.csv")
 All_Industries <- read_csv("data/All_Industries.csv")
-Education_Training_and_Experience <- read_excel("data/Education, Training, and Experience.xlsx")
-Education_Training_and_Experience_Categories <- read_excel("data/Education, Training, and Experience Categories.xlsx")
+Education_Training_and_Experience <- read_excel("data/Education, Training, and Experience short.xlsx")
+Education_Training_and_Experience_Categories <- read_excel("data/Education, Training, and Experience Categories short.xlsx")
 Knowledge <- read_excel("data/Knowledge.xlsx")%>%
   filter(`Scale Name`=="Importance")%>%
   select(Code=`O*NET-SOC Code`,Element_Name=`Element Name`,Importance=`Data Value`)
@@ -101,11 +101,11 @@ Tree_Job<-left_join(All_Career_Clusters,Projected_openings,by="Code")%>%
 
 
 #Fix long names
-Tree[(24235:24267),3]<-"Grinding and Buffing Machine Operators"
-Tree_Ed$Category_Description <- strtrim(Tree_Ed$Category_Description, 20)
-Tree_Ex$Category_Description <- strtrim(Tree_Ex$Category_Description, 20)
-Tree_Site$Category_Description <- strtrim(Tree_Site$Category_Description, 20)
-Tree_Job$Category_Description <- strtrim(Tree_Job$Category_Description, 40)
+#Tree[(24235:24267),3]<-"Grinding and Buffing Machine Operators"
+#Tree_Ed$Category_Description <- strtrim(Tree_Ed$Category_Description, 20)
+#Tree_Ex$Category_Description <- strtrim(Tree_Ex$Category_Description, 20)
+#Tree_Site$Category_Description <- strtrim(Tree_Site$Category_Description, 20)
+#Tree_Job$Category_Description <- strtrim(Tree_Job$Category_Description, 40)
 
 #code to create tree.  A version of this is used in the shiny app
 Tree%>%
