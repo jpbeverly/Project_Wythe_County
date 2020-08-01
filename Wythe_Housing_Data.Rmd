@@ -1,0 +1,563 @@
+---
+title: "Wythe_Housing_Data"
+author: "Dylan Glover"
+date: "July 28, 2020"
+output: pdf_document
+---
+
+```{r bps_data, include=FALSE}
+#Navigate here: https://www2.census.gov/econ/bps/County/
+#Copy page into excel, leave only the .txt file names as a column named 'links', leave this as the only sheet in the workbook
+#Save as bps_links.xlsx 
+  getwd()
+bps_links <- readxl::read_excel('bps_links.xlsx', sheet=1)
+
+  #Set your destination folder here
+destfold <- '/BPS Data/'
+
+lnks <- bps_links$links
+
+for (lk in lnks) {
+tryCatch({
+for (lk in lnks) {
+    str <- paste0('https://www2.census.gov/econ/bps/County/',lk)
+    str_dest <- paste0(destfold,lk)
+    download.file(url=str, destfile=str_dest, method="wininet", quiet=TRUE)
+}
+}, error=function(e){})
+
+}
+
+first <- read.table('/BPS Data/co0001c.txt', sep=",", skip=3)
+
+bps_candidates_c = list.files(destfold,pattern=".*(c.txt)")
+bps_candidates_a = list.files(destfold,pattern=".*(a.txt)")
+#bps_candidates_1 <- data.frame(first = substring(bps_candidates_c, 0, stringr::str_locate(pattern ='c.txt',bps_candidates_c)[1]-1), substring(bps_candidates_a, 0, stringr::str_locate(pattern ='a.txt',bps_candidates_a)[1]-1)
+                               
+bp_c <- data.frame(files = bps_candidates_c, priority = rep(1, length(bps_candidates_c)), common_name = substring(bps_candidates_c, 0, stringr::str_locate(pattern ='c.txt',bps_candidates_c)[1]-1))     
+bp_a <- data.frame(files = bps_candidates_a, priority = rep(2, length(bps_candidates_a)), common_name = substring(bps_candidates_a, 0, stringr::str_locate(pattern ='a.txt',bps_candidates_a)[1]-1))
+bp <- rbind(bp_c, bp_a)
+
+bp_final <- bp %>% group_by(common_name) %>% top_n(1, priority)
+
+vec_bp <- bp_final$files %>% as.character()
+
+for (b in vec_bp){
+       
+  # Create e_tracts, if nonexistent
+  if (!exists("bps_cnty")){
+  #  tryCatch({
+    bps_cnty <- data.table::fread(b, header=TRUE, sep=",", skip=3)
+  #  }, error=function(e){})
+  }
+   
+  # Append to e_tracts, if existent
+  if (exists("bps_cnty")){
+  #   tryCatch({
+    tmp_bps_cnty <- data.table::fread(b, header=TRUE, sep=",", skip=3)
+    bps_cnty <- rbind(bps_cnty, tmp_bps_cnty)
+    rm(tmp_bps_cnty)
+#  }, error=function(e){})
+  }
+ 
+}
+
+vec_bp_a <- bps_candidates_a
+
+for (b in vec_bp_a){
+       
+  # Create e_tracts, if nonexistent
+  if (!exists("bps_cnty")){
+  #  tryCatch({
+    bps_cnty <- data.table::fread(b, header=TRUE, sep=",", skip=3)
+  #  }, error=function(e){})
+  }
+   
+  # Append to e_tracts, if existent
+  if (exists("bps_cnty")){
+  #   tryCatch({
+    tmp_bps_cnty <- data.table::fread(b, header=TRUE, sep=",", skip=3)
+    bps_cnty <- rbind(bps_cnty, tmp_bps_cnty)
+    rm(tmp_bps_cnty)
+#  }, error=function(e){})
+  }
+ 
+}
+
+bps1990 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1990a.txt',sep=',',header=TRUE, skip=1)
+bps1990$year <- 1990
+
+bps1991 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1991a.txt',sep=',',header=TRUE, skip=1)
+bps1991$year <- 1991
+
+bps1992 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1992a.txt',sep=',',header=TRUE, skip=1)
+bps1992$year <- 1992
+
+bps1993 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1993a.txt',sep=',',header=TRUE, skip=1)
+bps1993$year <- 1993
+
+bps1994 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1994a.txt',sep=',',header=TRUE, skip=1)
+bps1994$year <- 1994
+
+bps1995 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1995a.txt',sep=',',header=TRUE, skip=1)
+bps1995$year <- 1995
+
+bps1996 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1996a.txt',sep=',',header=TRUE, skip=1)
+bps1996$year <- 1996
+
+bps1997 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1997a.txt',sep=',',header=TRUE, skip=1)
+bps1997$year <- 1997
+
+bps1998 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1998a.txt',sep=',',header=TRUE, skip=1)
+bps1998$year <- 1998
+
+bps1999 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co1999a.txt',sep=',',header=TRUE, skip=3)
+bps1999$year <- 1999
+colnames(bps1999) <- colnames(bps1998)
+
+bps2000 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2000a.txt',sep=',',header=TRUE, skip=3)
+bps2000$year <- 2000
+colnames(bps2000) <- colnames(bps1998)
+
+bps2001 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2001a.txt',sep=',',header=TRUE, skip=3)
+bps2001$year <- 2001
+colnames(bps2001) <- colnames(bps1998)
+
+bps2002 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2002a.txt',sep=',',header=TRUE, skip=3)
+bps2002$year <- 2002
+colnames(bps2002) <- colnames(bps1998)
+
+bps2003 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2003a.txt',sep=',',header=TRUE, skip=3)
+bps2003$year <- 2003
+colnames(bps2003) <- colnames(bps1998)
+
+bps2004 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2004a.txt',sep=',',header=TRUE, skip=3)
+bps2004$year <- 2004
+colnames(bps2004) <- colnames(bps1998)
+
+bps2005 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2005a.txt',sep=',',header=TRUE, skip=3)
+bps2005$year <- 2005
+colnames(bps2005) <- colnames(bps1998)
+
+bps2006 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2006a.txt',sep=',',header=TRUE, skip=3)
+bps2006$year <- 2006
+colnames(bps2006) <- colnames(bps1998)
+
+bps2007 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2007a.txt',sep=',',header=TRUE, skip=3)
+bps2007$year <- 2007
+colnames(bps2007) <- colnames(bps1998)
+
+bps2008 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2008a.txt',sep=',',header=TRUE, skip=3)
+bps2008$year <- 2008
+colnames(bps2008) <- colnames(bps1998)
+
+bps2009 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2009a.txt',sep=',',header=TRUE, skip=3)
+bps2009$year <- 2009
+colnames(bps2009) <- colnames(bps1998)
+
+bps2010 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2010a.txt',sep=',',header=TRUE, skip=3)
+bps2010$year <- 2010
+colnames(bps2010) <- colnames(bps1998)
+
+bps2011 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2011a.txt',sep=',',header=TRUE, skip=3)
+bps2011$year <- 2011
+colnames(bps2011) <- colnames(bps1998)
+
+bps2012 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2012a.txt',sep=',',header=TRUE, skip=3)
+bps2012$year <- 2012
+colnames(bps2012) <- colnames(bps1998)
+
+bps2013 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2013a.txt',sep=',',header=TRUE, skip=3)
+bps2013$year <- 2013
+colnames(bps2013) <- colnames(bps1998)
+
+bps2014 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2014a.txt',sep=',',header=TRUE, skip=3)
+bps2014$year <- 2014
+colnames(bps2014) <- colnames(bps1998)
+
+bps2015 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2015a.txt',sep=',',header=TRUE, skip=3)
+bps2015$year <- 2015
+colnames(bps2015) <- colnames(bps1998)
+
+bps2016 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2016a.txt',sep=',',header=TRUE, skip=3)
+bps2016$year <- 2016
+colnames(bps2016) <- colnames(bps1998)
+
+bps2017 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2017a.txt',sep=',',header=TRUE, skip=3)
+bps2017$year <- 2017
+colnames(bps2017) <- colnames(bps1998)
+
+bps2018 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2018a.txt',sep=',',header=TRUE, skip=3)
+bps2018$year <- 2018
+colnames(bps2018) <- colnames(bps1998)
+
+bps2019 <- read.table('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/BPS Data/co2019a.txt',sep=',',header=TRUE, skip=3)
+bps2019$year <- 2019
+colnames(bps2019) <- colnames(bps1998)
+
+bps_final <- rbind(bps1990, bps1991, bps1992, bps1993, bps1994, bps1995, bps1996, bps1997, bps1998, bps1999, bps2000, bps2001, bps2002, bps2003, bps2004, bps2005, bps2006, bps2007, bps2008, bps2009, bps2010, bps2011, bps2012, bps2013, bps2014, bps2015,
+bps2016, bps2017, bps2018, bps2019)
+
+bps_final$tot_units <- (bps_final$Units.1 + bps_final$Units.2 + 
+  bps_final$Units.3 + bps_final$Units.4 + bps_final$Units.5 +
+  bps_final$Units.6 + bps_final$Units.7)
+
+bps_final_Wythe <- bps_final %>% filter(State == '51', County == '197')
+
+
+```
+
+
+```{r acs_data}
+
+check.package.install <- function(pkge){
+  is.element(pkge, installed.packages()[,1])
+}
+
+if (!check.package.install("tidycensus")){
+  install.packages("tidycensus")
+}
+
+if (!check.package.install("tidyverse")){
+  install.packages("tidyverse")
+}
+
+if (!check.package.install("stringr")){
+  install.packages("stringr")
+}
+
+if (!check.package.install("ggplot2")){
+  install.packages("ggplot2")
+}
+
+if (!check.package.install("gridExtra")){
+  install.packages("gridExtra")
+}
+
+#Load Libraries
+
+library(tidycensus)
+library(tidyverse)
+library(stringr)
+library(sqldf)
+# Candidate variable tables for describing housing
+  # B23025 
+    #(001-007, 
+    #EMPLOYMENT STATUS FOR THE POPULATION 16 YEARS AND OVER, 
+    #Universe: EMPLOYMENT STATUS FOR THE POPULATION 16 YEARS AND OVER), 
+  # B17020 
+    #(001-009, 
+    #POVERTY STATUS IN THE PAST 12 MONTHS BY AGE, 
+    #Universe: Population For Whom Poverty Status Is Determined), 
+  # B17003 
+    #(001-012, 
+    #POVERTY STATUS IN THE PAST 12 MONTHS OF INDIVIDUALS BY SEX BY EDUCATIONAL ATTAINMENT, 
+    #Universe: Population 25 Years And Over For Whom Poverty Status Is Determined), 
+  # B15003 
+    #(001-025, 
+    #EDUCATIONAL ATTAINMENT FOR THE POPULATION 25 YEARS AND OVER, 
+    #Universe: Population 25 Years And Over), 
+
+# Create a vector of variables to pull
+
+vars<-c(
+ tot_year_structure_built = "B25034_001",
+  year_structure_built_2014_or_later = "B25034_002",
+  year_structure_built_2010_to_2013 = "B25034_003",
+  year_structure_built_2000_to_2009 = "B25034_004",
+  year_structure_built_1990_to_1999 = "B25034_005",
+  year_structure_built_1980_to_1989 = "B25034_006",
+  year_structure_built_1970_to_1979 = "B25034_007",
+  year_structure_built_1960_to_1969 = "B25034_008",
+  year_structure_built_1950_to_1959 = "B25034_009",
+  year_structure_built_1940_to_1949 = "B25034_010",
+  tot_year_structure_built_1939_or_earlier = "B25034_011",
+  median_year_structure_built = "B25035_001"
+  )
+
+# "get_acs" creates a census api call using the vector of variables specified above
+
+#Apply for census api and set 'yourkey' string to your API key
+yourkey <- 'bf801921436607713c5e848ed13db928413a0be7'
+
+acs <- tidycensus::get_acs(geography = "county",
+                                      state="VA",
+                                      county = 'Wythe',
+                                      variables = vars,
+                                      survey = "acs5",
+                                      key = yourkey,
+                                      output = "wide",
+                                      geometry = T,
+                                      keep_geo_vars = T)
+
+#Separate the NAME column into Census_tract, County, and State
+colnames=c("Census_tract","County","State")
+acs<-separate(acs,NAME.y, into=colnames, sep = ", ")
+
+# Create measures based on ACS variables
+b <- colnames(acs) %>% as.data.frame()
+colnames(b) <- c('var_name')
+c <- sqldf::sqldf("Select var_name from b where var_name like '%E'", method="raw")
+d <- acs %>% select(1:10, c$var_name)
+
+#0-6 years
+d$perc_built_0_to_6_yrs_ago <- round((d$year_structure_built_2014_or_laterE / d$tot_year_structure_builtE)*100,2)
+#7-10 years
+d$perc_built_7_to_10_yrs_ago <- round((d$year_structure_built_2010_to_2013E / d$tot_year_structure_builtE)*100,2)
+#11-20 years
+d$perc_built_11_to_20yrs_ago <- round((d$year_structure_built_2000_to_2009E / d$tot_year_structure_builtE)*100,2)
+#21-30 years
+d$perc_built_21_to_30yrs_ago <- round((d$year_structure_built_1990_to_1999E / d$tot_year_structure_builtE)*100,2)
+#30+ years
+d$perc_built_30yrs_and_up_ago <- round(((d$year_structure_built_1980_to_1989E + d$year_structure_built_1970_to_1979E + d$year_structure_built_1960_to_1969E +
+d$year_structure_built_1950_to_1959E +
+d$year_structure_built_1940_to_1949E) / d$tot_year_structure_builtE)*100,2)
+
+
+```
+
+
+
+```{r plots, echo=FALSE}
+library(ggplot2)
+library(tidyr)
+
+d <- d[,c(1:5, 23:28)]
+
+e <- d[,c(5,7:11)]
+
+d_lng <- gather(e, acs_var, acs_estimate, perc_built_30yrs_and_up_ago:perc_built_30yrs_and_up_ago, factor_key=TRUE)
+
+vrs <- e %>% select(perc_built_0_to_6_yrs_ago:perc_built_30yrs_and_up_ago) %>% colnames() %>% as.vector()
+
+f <- reshape2::melt(data=e, id.vars =c("GEOID"), measure.vars=c("perc_built_0_to_6_yrs_ago", "perc_built_7_to_10_yrs_ago", "perc_built_11_to_20yrs_ago","perc_built_21_to_30yrs_ago", "perc_built_30yrs_and_up_ago"))
+
+names(f)[names(f) == "variable"] <- "Median Housing Stock Age"
+names(f)[names(f) == "value"] <- "Proportion of Housing"
+
+saveRDS(f, file = "housing_ages.rds")
+
+f<- readRDS(file = "housing_ages.rds")
+housing_age <- ggplot(f, aes(x=`Median Housing Stock Age`, y=`Proportion of Housing`, fill=as.factor(`Median Housing Stock Age`))) + 
+    geom_bar(stat = "identity") +
+    coord_flip() + theme(legend.title = element_blank(), plot.title = element_blank(), plot.subtitle = element_text(color="black", size=9, hjust = 0), axis.text.y = element_blank(), axis.ticks.y = element_blank(), panel.background = element_blank()) + 
+    scale_fill_viridis_d(name = "Age of Housing", labels = c("0-6 years", "7-10 years", "11-20 years", "21-30 years","30+ years")) 
+
+
+ 
+ggsave(filename="Median_Housing_Stock_Age.png", plot = housing_age)
+
+##bps plot
+# Libraries
+library(ggplot2)
+library(dplyr)
+#library(hrbrthemes)
+
+saveRDS(bps_final_Wythe, file = "bps_final_Wythe.rds")
+test1<- readRDS(file = "bps_final_Wythe.rds")
+# Plot
+bps_final_Wythe %>%
+    ggplot( aes(x=year, y=tot_units)) +
+    geom_line( color="navy") +
+    geom_point(shape=21, color="red", fill="#0066ff", size=2) +
+    theme(legend.title = element_blank(), axis.ticks.y = element_blank(), plot.title = element_blank(), plot.subtitle = element_text(color="black", size=9, hjust = 0), panel.background = element_blank()) +
+    ggtitle("Trend of Building Unit Permits by Year") + labs(title = "Building Permits in Wythe County", x = "Year", y = "Total Housing Units") + scale_x_continuous(breaks = seq(1990, 2017, by = 5))
+
+
+install.packages('ggrepel')
+library(ggrepel)
+
+bps_final_Wythe %>%
+    ggplot( aes(x=year, y=tot_units)) +
+    geom_line( color="navy") +
+    geom_point(shape=21, color="red", fill="#0066ff", size=2) +
+    theme(legend.title = element_blank(), axis.ticks.y = element_blank(), plot.title = element_blank(), plot.subtitle = element_text(color="black", size=9, hjust = 0), panel.background = element_blank()) +
+    ggtitle("Trend of Building Unit Permits by Year") + labs(title = "Building Permits in Wythe County", x = "Year", y = "Total Housing Units") + scale_x_continuous(breaks = seq(1990, 2017, by = 5)) + 
+  geom_label_repel(aes(label = paste0(year, ', ', tot_units)),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50')
+
+```
+
+```{r infrastructure}
+library(sf)
+#child care centers
+child <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Child_Care_Centers/ccaffbf9-bd10-4681-b6f2-8459739b9ed32020313-1-96q5q8.426na.shp')
+
+#powerplants
+pplants <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Power_Plants-shp/Power_Plants.shp')
+
+#transmission lines
+transmission_lines <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Electric_Power_Transmission_Lines-shp/Transmission_Lines.shp')
+
+#NCUA credit unions
+credit_unions <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/NCUA_Insured_Credit_Unions-shp/NCUA_InsuredCreditUnions.shp')
+
+#FDIC Insured banks
+banks <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/FDIC_Insured_Banks-shp/FDIC_Insured_Banks.shp')
+
+#cities and towns
+cities_towns <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Cities_and_Towns_NTAD-shp/Cities_and_Towns_NTAD.shp')
+
+#railroads
+railroads <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Cities_and_Towns_NTAD-shp/Cities_and_Towns_NTAD.shp')
+
+#pt all shape files .shp in just a single folder easy to access
+
+p_tr <- st_read('C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/Power_Plants-shp/Power_Plants.prj')
+ p_tr <- st_transform(pplants, crs = 'NAD83')
+use sf. read it in with st_read, 
+convert with st_transform (e.g. trees_with_new_crs <- st_transform(trees, crs = the_crs))
+
+
+library(USAboundaries)
+
+ggplot(acs, aes(fill = per_bach_and_up), size=0.5) +
+    geom_sf() +
+    coord_sf(crs = 26914)+
+    labs(title="Richmond city",subtitle="Percentage of the Population aged 25+ with Bachelors degree or Higher as Highest Degree") +  theme_tufte() + 
+    theme(legend.title = element_blank(), plot.title = element_blank(), plot.subtitle = element_text(color="black", size=9, hjust = 0)) + 
+    scale_fill_viridis_c()
+
+
+####copied for boundaries
+library(tigris)
+#states_tigris <- tigris::states()
+tracts_tigris_VA <- tigris::tracts(state = '51')
+rail_tigris <- tigris::rails()
+surrounding_counties <- c("Wythe county", "Carroll county", "Grayson county","Bland county",
+                          "Pulaski county", "Pittsylvania county", "Smyth county",
+                          "Washington county", "Floyd county", "Patrick county", "Franklin county", "Montgomery county",
+                          "Henry county", "Martinsville City", "Danville City", "Galax City", "Radford City")
+roads_tigris <- tigris::roads(state = 51, county = surrounding_counties)
+# Read in Virginia shape file
+# mapVA  <- st_read("~data/VirginiaShapeFiles/tl_2019_51_tract.shp", stringsAsFactors = FALSE)
+mapVA  <- st_read("C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/tl_2019_51_tract.shp",
+                  stringsAsFactors = FALSE)
+
+
+mapVA <- tracts_tigris_VA
+
+install.packages(c("leaflet","geojsonio","htmlwidgets","htmltools"))
+
+library(leaflet)
+library(geojsonio) 
+library(htmlwidgets)
+library(htmltools)
+library(ggplot2)
+library(tidyverse)
+library(leaflet)
+ggplot() + 
+  geom_sf(data = mapVA, size = 3, color = "black", fill = "cyan1") + 
+  ggtitle("AOI Boundary Plot") + 
+  coord_sf()
+
+VAmap <- leaflet(mapVA) %>% 
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(36.9485, 81.0848, zoom = 13) %>% 
+  addPolygons(data=cities_towns,
+              col = 'dodgerblue',
+              stroke = FALSE, 
+              fillOpacity = 0.3, 
+              smoothFactor = 0.5) %>%
+  addCircleMarkers(label=~string,
+                   weight = 3, 
+                   radius=10, 
+                   color="#ffa500")
+
+
+#map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
+arrests2 <- read_excel("cleaned_arrests.xlsx")
+
+shp <- st_read("cb_2018_us_county_500k.shp")
+shp <- st_read("C:/Users/dnsgl/Desktop/DSPG/Wythe/github/Wythe/Infrastructure Shapefiles/cb_2018_us_county_500k.shp")
+
+merged_data <- merge(cities_towns, mapVA, by = "GEOID")
+
+drug_arrests <- st_as_sf(merged_data)
+page_arrests <- st_join(drug_arrests, mapVA, by = "GEOID")
+
+# Read in other County Data
+
+
+#college_university_data <- read.csv("Colleges_and_Universities.csv")
+#small_business_data <- read.csv("Small_Business_Development_Centers.csv")
+#workforce_dev_center_data <- read.csv("Workforce_Development_Centers.csv")
+
+Arrests_filtered <- subset(page_arrests, GEOID.x == 51139| GEOID.x == 51660| GEOID.x == 51165| GEOID.x == 51079| GEOID.x == 51157|GEOID.x == 51187|GEOID.x == 51171 |GEOID.x == 51113) 
+  #filter(GEOID.x == "51139", "51660", "51165", "51079", "51113", "51157", "51187", "51171")
+
+newdata <- subset(mydata, age >= 20 | age < 10,
+
+colnames(small_business_data)[1] <- "X"
+small_business_data <- small_business_data %>%
+  filter(LOC %in% c("Harrisonburg", "Page", "Rockingham", "Greene", 
+                    "Madison", "Rappahannock", "Warren", "Shenandoah"))
+
+colnames(workforce_dev_center_data)[1] <- "X"
+workforce_dev_center_data <- workforce_dev_center_data %>%
+  filter(Zip %in% c("22851", "22650", "22827", "22849", "22835", # Page
+                    "22801", "22802", "22807", # Harrisonburg
+                    "22626", "22842", "22810", "22845", "22824",
+                    "22660", "22641", "22657", "22644", "22847",
+                    "22652", "22664", # Shenandoah
+                    "22968", "22935", "22965", "22968", "22935", 
+                    "22973", # Greene
+                    "22727" # Part of Madison
+  ))
+
+
+
+# c("Harrisonburg", "Page", "Rockingham", "Greene",
+# "Madison", "Rappahannock", "Warren", "Shenandoah"))
+
+
+# Get VA County Outlines
+va_sf<-get_acs(geography = "county",
+               state="VA",
+               county=c("Page county",
+                        "Rockingham county",
+                        "Greene county",
+                        "Madison county",
+                        "Rappahannock county",
+                        "Warren county", 
+                        "Shenandoah county",
+                        "HARRISONBURG"),
+               variables = "B19058_002",
+               survey = "acs5",
+               key = myACSkey,
+               year=2018,
+               output = "wide",
+               show_call = T,
+               geometry = T,
+               keep_geo_vars = T)%>%
+  select(COUNTYFP,geometry)
+
+# Get Page County outline
+page_outline<-get_acs(geography = "county",
+                      state="VA",
+                      county=c("Page county"),
+                      variables = "B19058_002",
+                      survey = "acs5",
+                      key = myACSkey,
+                      year=2018,
+                      output = "wide",
+                      show_call = T,
+                      geometry = T,
+                      keep_geo_vars = T)%>%
+  select(COUNTYFP,geometry)
+
+
+
+# Arrests Map
+ggplot(Arrests_filtered) +
+  geom_sf(aes(fill=Per1000)) +
+  geom_sf(data=va_sf, fill="transparent", color="black", size=.5) +
+  geom_sf(data=page_outline, fill="transparent", color="red", size=1) +
+  theme(legend.title = element_blank())+ 
+  scale_fill_gradient(low = "#5681F7", high = "#132B43") + theme_bw() + ggtitle("Page County 2018 Drug Arrests")
+  
+
+
+```
