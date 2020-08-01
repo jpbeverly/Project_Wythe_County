@@ -1,0 +1,1 @@
+The Building Permits County files (current month and year-to-date) for July 2018 has been updated to include counties that were missing from the original file previously released on August 23, 2018.

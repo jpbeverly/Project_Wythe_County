@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xalan="http://xml.apache.org/xalan" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd">
+    <fileIdentifier>
+        <gco:CharacterString>1549061294645r9062214603875989</gco:CharacterString>
+    </fileIdentifier>
+    <language>
+        <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+    </language>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <contact>
+        <CI_ResponsibleParty>
+            <individualName>
+                <gco:CharacterString>Data Management Section, Statistics Branch</gco:CharacterString>
+            </individualName>
+            <organisationName>
+                <gco:CharacterString>Federal Deposit Insurance Corporation, Division of Insurance and Research</gco:CharacterString>
+            </organisationName>
+            <positionName>
+                <gco:CharacterString>Senior Financial Analyst</gco:CharacterString>
+            </positionName>
+            <contactInfo>
+                <CI_Contact>
+                    <phone>
+                        <CI_Telephone>
+                            <voice>
+                                <gco:CharacterString>(703)254-0194</gco:CharacterString>
+                            </voice>
+                        </CI_Telephone>
+                    </phone>
+                    <address>
+                        <CI_Address>
+                            <deliveryPoint>
+                                <gco:CharacterString>3501 N. Fairfax Drive</gco:CharacterString>
+                            </deliveryPoint>
+                            <city>
+                                <gco:CharacterString>Arlington</gco:CharacterString>
+                            </city>
+                            <administrativeArea>
+                                <gco:CharacterString>VA</gco:CharacterString>
+                            </administrativeArea>
+                            <postalCode>
+                                <gco:CharacterString>22226-3500</gco:CharacterString>
+                            </postalCode>
+                            <country>
+                                <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                            </country>
+                        </CI_Address>
+                    </address>
+                </CI_Contact>
+            </contactInfo>
+            <role>
+                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+            </role>
+        </CI_ResponsibleParty>
+    </contact>
+    <dateStamp>
+        <gco:Date>2019-02-01</gco:Date>
+    </dateStamp>
+    <metadataStandardName>
+        <gco:CharacterString>NAP - Metadata</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>1.2</gco:CharacterString>
+    </metadataStandardVersion>
+    <spatialRepresentationInfo>
+        <MD_VectorSpatialRepresentation>
+            <geometricObjects>
+                <MD_GeometricObjects>
+                    <geometricObjectType>
+                        <MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="point" codeSpace="ISOTC211/19115">point</MD_GeometricObjectTypeCode>
+                    </geometricObjectType>
+                    <geometricObjectCount>
+                        <gco:Integer>88063</gco:Integer>
+                    </geometricObjectCount>
+                </MD_GeometricObjects>
+            </geometricObjects>
+        </MD_VectorSpatialRepresentation>
+    </spatialRepresentationInfo>
+    <referenceSystemInfo gco:nilReason="missing"/>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation (FDIC) Insured Banks</gco:CharacterString>
+                    </title>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:Date>2018-06-29</gco:Date>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="ISOTC211/19115">publication</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                    <citedResponsibleParty>
+                        <CI_ResponsibleParty>
+                            <organisationName>
+                                <gco:CharacterString>FDIC Division of Insurance and Research, Data Collection and/or Structure Revisions Reports Analysis &amp; Quality Control Section, Senior Financial Analyst</gco:CharacterString>
+                            </organisationName>
+                            <contactInfo gco:nilReason="missing"/>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator" codeSpace="ISOTC211/19115">originator</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </citedResponsibleParty>
+                    <presentationForm>
+                        <CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+                    </presentationForm>
+                    <series>
+                        <CI_Series>
+                            <name>
+                                <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                            </name>
+                            <issueIdentification>
+                                <gco:CharacterString>06/29/2018</gco:CharacterString>
+                            </issueIdentification>
+                        </CI_Series>
+                    </series>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>The Summary of Deposits (SOD) is the annual survey of branch office deposits for all FDIC-insured institutions including insured U.S. branches of foreign banks. Data are as of June 30. Users can access these data by: (1) single institution, (2) institutions within a geographic area, or (3) aggregated within a geographic area. SOD features include custom market share reports and downloads. Link: https://www5.fdic.gov/sod/sodMarketBank.asp?barItem=2Scope of the SurveysTo provide a means for measuring deposits in local banking markets, the surveys obtain deposit figures for each banking office of branch banking systems, and for each insured U.S. branch of a foreign bank. Deposit figures for unit banks (which do not have branch offices) were obtained from the June Reports of Condition. Deposit Reporting - Institutions should report their deposits in a manner consistent with their existing internal record-keeping practices, however, other methods that logically reflect the deposit gathering activity of the bank's branches may be used. It is recognized that certain classes of deposits and deposits of certain types of customers may be assigned to a single office. Please refer to the reporting instructions for more information. A branch/office, for purposes of this survey, is any location, or facility, of a financial institution, including its main office, where deposit accounts are opened, deposits are accepted, checks paid, and loans are granted. Branches include, but are not limited to, brick and mortar locations, detached drive-in facilities, seasonal offices, offices on military bases or government installations, paying/receiving stations or units, and Internet and Phone Banking locations where a customer can open accounts, make deposits and borrow money. A branch does not include Automated Teller Machines (ATM), Consumer Credit Offices, Contractual Offices, Customer Bank Communication Terminals (CBCT), Electronic Fund Transfer Units (EFTU), and Loan Production Offices. Deposit information is required for each insured office of an FDIC-insured institution located in any State, the District of Columbia, the Commonwealth of Puerto Rico or any U.S. territory or possession such as Guam or the U.S. Virgin Islands, and including any foreign country which has state-equivalent federal benefits extended by treaty.Arrangement of Published DataBecause these publications are used as a source of market share information for individual banking markets, the figures for each geographical area only include deposits of offices located within that area. Several institutions have designated home offices that do not accept deposits; these have been included in the survey to provide a more complete listing of all offices. Additional points that should be noted: 1. With the exception noted above, "banking office" is defined to include all offices and facilities that actually hold deposits, and does not include loan production offices, computer centers, and other nondeposit installations, such as automated teller machines (ATMs). 2. Institutions are allowed to combine deposit data from two or more offices within the same county for the following office types: drive-in offices, seasonal branches, and military facilities. Where centralized bookkeeping or other conditions make it impossible to report exact figures, estimates are required. 3. International Banking Facility (IBF) deposits are considered deposits in foreign offices and are not included in the Summary of Deposits Survey. 4. Offices and deposits are reported by the institution that owned the office as of the close of business on June 30. 5. The term "offices" includes both main offices and branches. An institution with four branches operates a total of five offices. 6. All reports submitted to the FDIC have been validated and corrected to the extent possible. There may be rounding differences or minor reporting errors reflected in the tables. 7. Savings Institutions include all FDIC-Insured financial institutions that operate under federal or state thrift banking charters. Prior to August 9, 1989, all institutions insured by the Federal Savings and Loan Insurance Corporation (FSLIC) and all savings banks insured by the FDIC are included in any applicable chart.</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>Data supplied to The Homeland Infrastructure Foundation-Level Data (HIFLD) Working Group. HIFLD was established in February 2002 to address desired improvements in collection, processing, sharing, and protection of homeland infrastructure geospatial information across multiple levels of government and to develop a common foundation of homeland infrastructure data to be used for visualization and analysis on all classification domains.</gco:CharacterString>
+            </purpose>
+            <credit>
+                <gco:CharacterString>This feature class is a product of contributions made by several sections within the Statistics Branch of the FDIC Division of Insurance and Research: The Data Collections and Analysis Section oversaw collection and verification of branch deposit information. The Data Applications Section assembled deposit information and enhanced data with additional demographic and institution structural information. The Data Management Section geocoded branch addresses and create final geospatial point feature class.</gco:CharacterString>
+            </credit>
+            <status>
+                <MD_ProgressCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" codeSpace="ISOTC211/19115">completed</MD_ProgressCode>
+            </status>
+            <pointOfContact>
+                <CI_ResponsibleParty>
+                    <individualName>
+                        <gco:CharacterString>Data Applications, Satistics Branch</gco:CharacterString>
+                    </individualName>
+                    <organisationName>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation, Division of Insurance and Research</gco:CharacterString>
+                    </organisationName>
+                    <positionName>
+                        <gco:CharacterString>Senior Financial Analyst</gco:CharacterString>
+                    </positionName>
+                    <contactInfo>
+                        <CI_Contact>
+                            <phone>
+                                <CI_Telephone>
+                                    <voice>
+                                        <gco:CharacterString>(703) 254-0229</gco:CharacterString>
+                                    </voice>
+                                </CI_Telephone>
+                            </phone>
+                            <address>
+                                <CI_Address>
+                                    <deliveryPoint>
+                                        <gco:CharacterString>3501 N. Fairfax Drive</gco:CharacterString>
+                                    </deliveryPoint>
+                                    <city>
+                                        <gco:CharacterString>Arlington</gco:CharacterString>
+                                    </city>
+                                    <administrativeArea>
+                                        <gco:CharacterString>VA</gco:CharacterString>
+                                    </administrativeArea>
+                                    <postalCode>
+                                        <gco:CharacterString>22226-3500</gco:CharacterString>
+                                    </postalCode>
+                                    <country>
+                                        <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                                    </country>
+                                </CI_Address>
+                            </address>
+                        </CI_Contact>
+                    </contactInfo>
+                    <role>
+                        <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="ISOTC211/19115">pointOfContact</CI_RoleCode>
+                    </role>
+                </CI_ResponsibleParty>
+            </pointOfContact>
+            <resourceMaintenance>
+                <MD_MaintenanceInformation>
+                    <maintenanceAndUpdateFrequency>
+                        <MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually" codeSpace="ISOTC211/19115">annually</MD_MaintenanceFrequencyCode>
+                    </maintenanceAndUpdateFrequency>
+                </MD_MaintenanceInformation>
+            </resourceMaintenance>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Continental United States</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>CONUS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Alaska</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Hawaii</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>US Virgin Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>American Samoa</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Puerto Rico</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Northern Marianas Islands</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Guam</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" codeSpace="ISOTC211/19115">place</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>economy</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                    <thesaurusName>
+                        <CI_Citation>
+                            <title>
+                                <gco:CharacterString>ISO 19115 Topic Categories</gco:CharacterString>
+                            </title>
+                            <date gco:nilReason="missing"/>
+                            <citedResponsibleParty gco:nilReason="missing"/>
+                        </CI_Citation>
+                    </thesaurusName>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>Banks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Banking</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>FDIC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SOD</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Summary of Deposits</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Financial Services</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Federal Deposit Insurance Corporation</gco:CharacterString>
+                    </keyword>
+                    <type>
+                        <MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" codeSpace="ISOTC211/19115">theme</MD_KeywordTypeCode>
+                    </type>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>Disclaimer - The Summary of Deposits data is presented "as reported" by the FDIC-insured institutions that have submitted the annual survey. Although every attempt has been made to ensure the reliability of the information contained herein, some inaccuracies may exist. For this reason, the FDIC and OTS neither assume responsibility for, nor certify to the accuracy of any of the reported data. Further, these data do not indicate approval or disapproval of any particular institution's performance and are not to be construed as a rating of any institution by federal regulators. Users are cautioned that any conclusions that they may draw from the Summary of Deposits data are their own and are not to be attributed to the federal regulators. In addition, a determination of competitiveness is only one of several assessment factors used by Federal agencies during the application review process. The branch office deposit information is obtained primarily through the annual surveys of deposits conducted by the Federal Deposit Insurance Corporation (FDIC) and the Office of Thrift Supervision (OTS). Information for unit banks, banks without branches, is obtained from the June Reports of Condition and Thrift Financial Reports submitted by all FDIC-insured depository institutions. These reports are prepared in accordance with federal regulatory instructions. Explanatory Notes is an integral part of this publication and provides information regarding the source of data and their use.</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <resourceConstraints>
+                <MD_LegalConstraints>
+                    <useLimitation>
+                        <gco:CharacterString>See access and use constraints information.</gco:CharacterString>
+                    </useLimitation>
+                    <otherConstraints>
+                        <gco:CharacterString>None (Public Domain Information): Data that is deemed "Public Domain Information" can be freely accessed and distributed. Note of caution: Longitude and latitude geo-coding may not always be at roof-top precision.</gco:CharacterString>
+                    </otherConstraints>
+                </MD_LegalConstraints>
+            </resourceConstraints>
+            <spatialRepresentationType>
+                <MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+            </spatialRepresentationType>
+            <language>
+                <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+            </language>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <topicCategory>
+                <MD_TopicCategoryCode>economy</MD_TopicCategoryCode>
+            </topicCategory>
+            <environmentDescription>
+                <gco:CharacterString>Version 6.2 (Build 9200) ; Esri ArcGIS 10.6.1.9270</gco:CharacterString>
+            </environmentDescription>
+            <extent>
+                <EX_Extent>
+                    <description>
+                        <gco:CharacterString>Temporal extent defined by data collection REPDTE attribute.</gco:CharacterString>
+                    </description>
+                    <temporalElement>
+                        <EX_TemporalExtent>
+                            <extent>
+                                <gml:TimePeriod gml:id="N65747">
+                                    <gml:beginPosition>2015-06-30</gml:beginPosition>
+                                    <gml:endPosition>2015-06-30</gml:endPosition>
+                                </gml:TimePeriod>
+                            </extent>
+                        </EX_TemporalExtent>
+                    </temporalElement>
+                </EX_Extent>
+            </extent>
+            <extent>
+                <EX_Extent>
+                    <geographicElement>
+                        <EX_GeographicBoundingBox>
+                            <westBoundLongitude>
+                                <gco:Decimal>-170.683752</gco:Decimal>
+                            </westBoundLongitude>
+                            <eastBoundLongitude>
+                                <gco:Decimal>170.855</gco:Decimal>
+                            </eastBoundLongitude>
+                            <southBoundLatitude>
+                                <gco:Decimal>-14.28136</gco:Decimal>
+                            </southBoundLatitude>
+                            <northBoundLatitude>
+                                <gco:Decimal>71.292547</gco:Decimal>
+                            </northBoundLatitude>
+                        </EX_GeographicBoundingBox>
+                    </geographicElement>
+                </EX_Extent>
+            </extent>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <distributor>
+                <MD_Distributor>
+                    <distributorContact>
+                        <CI_ResponsibleParty>
+                            <individualName>
+                                <gco:CharacterString>Data Management Section, Statistics Branch</gco:CharacterString>
+                            </individualName>
+                            <organisationName>
+                                <gco:CharacterString>Federal Deposit Insurance Corporation, Division of Insurance and Research</gco:CharacterString>
+                            </organisationName>
+                            <positionName>
+                                <gco:CharacterString>Senior Financial Analyst</gco:CharacterString>
+                            </positionName>
+                            <contactInfo>
+                                <CI_Contact>
+                                    <phone>
+                                        <CI_Telephone>
+                                            <voice>
+                                                <gco:CharacterString>(703) 254-0194</gco:CharacterString>
+                                            </voice>
+                                        </CI_Telephone>
+                                    </phone>
+                                    <address>
+                                        <CI_Address>
+                                            <deliveryPoint>
+                                                <gco:CharacterString>3501 N. Fairfax Drive</gco:CharacterString>
+                                            </deliveryPoint>
+                                            <city>
+                                                <gco:CharacterString>Arlington</gco:CharacterString>
+                                            </city>
+                                            <administrativeArea>
+                                                <gco:CharacterString>VA</gco:CharacterString>
+                                            </administrativeArea>
+                                            <postalCode>
+                                                <gco:CharacterString>22226-3500</gco:CharacterString>
+                                            </postalCode>
+                                            <country>
+                                                <Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+                                            </country>
+                                        </CI_Address>
+                                    </address>
+                                    <contactInstructions>
+                                        <gco:CharacterString>Geospatial file is available as Freedom of Information Act request: https://www.fdic.gov/about/freedom/</gco:CharacterString>
+                                    </contactInstructions>
+                                </CI_Contact>
+                            </contactInfo>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor" codeSpace="ISOTC211/19115">distributor</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </distributorContact>
+                    <distributionOrderProcess>
+                        <MD_StandardOrderProcess>
+                            <orderingInstructions>
+                                <gco:CharacterString>How to Submit Your Electronic FOIA Request https://efoiarequest.fdic.gov/palMain.aspx Please select from the menu of options in the left column to navigate this site. All users must “Sign In.” First-time users must register. Registration is safe, quick and easy. Important Guidance Fees – Please review our FOIA Processing Fee Schedule available in the FDIC FOIA Service Center if you have any questions about the costs associated with your request. You must state the maximum amount you are willing to pay for the records that you request. Clearly Identify the Records that You Seek – Please provide us with a complete description of the FDIC records you would like to obtain. Please do not use broad or ambiguous phrases such as “any and all.” If you know when the records were created, tell us; if you’re not sure, suggest a reasonable time period. Provide Detailed Background about the Records – Please include information that will help us to locate the records you seek. For example: If you would like to obtain records about a failed bank, please provide the former bank’s full name and location. If you would like to obtain records about an FDIC contract, please identify the vendor, contract number, subject matter and/or date of contract award. Additional Attachments – You may include an attachment to your request “Description” that you believe may assist us in processing your request. You may also include an attachment to your request for a “Fee Waiver” and/or “Expedited Processing” that you believe may assist us in evaluating the merits of such requests.</gco:CharacterString>
+                            </orderingInstructions>
+                        </MD_StandardOrderProcess>
+                    </distributionOrderProcess>
+                </MD_Distributor>
+            </distributor>
+        </MD_Distribution>
+    </distributionInfo>
+    <dataQualityInfo>
+        <DQ_DataQuality>
+            <scope>
+                <DQ_Scope>
+                    <level>
+                        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+                    </level>
+                </DQ_Scope>
+            </scope>
+            <report>
+                <DQ_ConceptualConsistency>
+                    <measureDescription>
+                        <gco:CharacterString>Attribute data for Core Based Statistical Areas (CBSA) has been verified using a spacial join to US Census TIGER shape files.</gco:CharacterString>
+                    </measureDescription>
+                    <result gco:nilReason="missing"/>
+                </DQ_ConceptualConsistency>
+            </report>
+            <report>
+                <DQ_CompletenessOmission>
+                    <measureDescription>
+                        <gco:CharacterString>The map only includes a point feature with attribute data for main offices and branches of FDIC insured institutions. A branch does not include Automated Teller Machines (ATM), Consumer Credit Offices, Contractual Offices, Customer Bank Communication Terminals (CBCT), Electronic Fund Transfer Units (EFTU), and Loan Production Offices.</gco:CharacterString>
+                    </measureDescription>
+                    <result gco:nilReason="missing"/>
+                </DQ_CompletenessOmission>
+            </report>
+            <lineage>
+                <LI_Lineage>
+                    <processStep>
+                        <LI_ProcessStep>
+                            <description>
+                                <gco:CharacterString>Geocode branch address information found in the Summary of Deposits SAS internal dataset SODMIC17.SAS7BDAT.</gco:CharacterString>
+                            </description>
+                            <dateTime>
+                                <gco:DateTime>2017-10-15T00:00:00</gco:DateTime>
+                            </dateTime>
+                        </LI_ProcessStep>
+                    </processStep>
+                </LI_Lineage>
+            </lineage>
+        </DQ_DataQuality>
+    </dataQualityInfo>
+</MD_Metadata>
